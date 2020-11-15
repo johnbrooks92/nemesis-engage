@@ -25,14 +25,19 @@
                 <p>
                     <span class="standardsLabel"><h3>Standard Moves</h3></span>
                 </p>
-                <button onclick="kamehameha()">Kamehameha Wave</button><br>
-                <button onclick="solar()">Solar Flare</button><br>
-                <button onclick="meteor()">Meteor Combination</button><br>
-                <button onclick="dragonThrow()">Dragon Throw</button><br>
+                <button onclick="kamehameha()" class="moves" id="movesGoku">Kamehameha Wave</button> dmg: 110 ki: 155<br>
+                <button onclick="kiai()" class="moves" id="movesGoku">Kiai Blowback</button> dmg:50  ki: 65 <br>
+                <button onclick="dragonFist()" class="moves" id="movesGoku">Dragon Fist</button> dmg: 95 ki: 130<br>
+                <button onclick="meteor()" class="moves" id="movesGoku">Meteor Combination</button>dmg: 70  ki: 30
                 <p>
-                    <span class="ultimatesLabel"><h3>Ultimate Moves</h3></span>
+                    <span class="ultimatesLabel" ><h3>Ultimate Moves</h3></span>
                 </p>
-                <button onclick="spirit()">Spirit Bomb</button><br>
+                <button onclick="spirit()" class="ultimateMoves" id="ultimateMovesGoku">Spirit Bomb</button> dmg: 200 ki: 290
+                <p>
+                    <span class="vitalsLabel"><h3>Ki and Health</h3></span>
+                </p>
+                <button onclick="kiGoku()" class="moves" id="kiMoves">Charge Ki!</button> Gather your energy!<br>
+                <button onclick="recoverGoku()" class="moves" id="healthMoves">Recover Health</button> Senzu Bean! (max. 1)<br>
             </div>
 
 
@@ -58,14 +63,19 @@
                 <p>
                     <span class="standardsLabel"><h3>Standard Moves</h3></span>
                 </p>
-                <button onclick="galickGun()">Galick Gun</button><br>
-                <button onclick="lucora()">Lucora Gun</button><br>
-                <button onclick="fireworks()">Dirty Fireworks</button><br>
-                <button onclick="infinite()">Infinite Break</button><br>
+                <button onclick="galickGun()" class="moves" id="movesVegeta">Galick Gun</button> dmg: 120 ki: 160<br>
+                <button onclick="lucora()" class="moves" id="movesVegeta">Lucora Gun</button> dmg: 65 ki: 75<br>
+                <button onclick="fireworks()" class="moves" id="movesVegeta">Dirty Fireworks</button> dmg: 85 ki: 120 <br>
+                <button onclick="infinite()" class="moves" id="movesVegeta">Infinite Break</button> dmg: 55 ki: 30 <br>
                 <p>
                     <span class="ultimatesLabel"><h3>Ultimate Moves</h3></span>
                 </p>
-                <button onclick="bigBang()">Big Bang Attack!</button><br>
+                <button onclick="bigBang()" class="ultimateMoves" id="ultimateMovesVegeta">Big Bang Attack</button> dmg: 160 ki: 235 <br>
+                <p>
+                    <span class="vitalsLabel"><h3>Ki and Health</h3></span>
+                </p>
+                <button onclick="kiVegeta()" class="moves" id="kiMoves">Charge Ki!</button> Gather your energy!<br>
+                <button onclick="recoverVegeta()" class="moves" id="healthMoves">Recover Health</button> Senzu Bean! (max. 1)<br>
             </div>
             </div>
         </div>
@@ -73,7 +83,6 @@
         <div id="bottomRow">
             <h1> Nemesis: Engage </h1>
             <h3> Where Rivals Clash!</h3>
-            <p>In Nemesis Engage, you will experience some of the greatest battles our developers have witnessed in lore spanning games, comics, and more. Select your battle and experience the rivalry first hand!</p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

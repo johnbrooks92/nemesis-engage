@@ -1,6 +1,5 @@
 body{
-    background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    background-color: black;
 }
 #topRow {
     display: flex;
@@ -10,21 +9,18 @@ body{
     justify-content: space-between;
     background-image: url("../img/goku-vegeta-wallpaper.jpg");
     background-size: cover;
-    align-items: baseline;
+    align-items: flex-end;
 }
 .fighter{
     margin: 15px 30px;
     height: 300px;
     width: 210px;
+    align-self: baseline;
 }
 #sonGoku{
-    /*background-color: #ff4e00;*/
-    /*background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);*/
     background-color: transparent;
 }
 #princeVegeta{
-    /*background-color: #2a2a72;*/
-    /*background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);*/
     background-color: transparent;
 }
 .fighter img{
@@ -34,55 +30,63 @@ body{
     padding: 20px;
     font-family: 'Source Code Pro', monospace;
     color: lawngreen;
+    background-color: black;
 }
 h1{
     font-family: 'Goldman', cursive;
     color: limegreen;
 }
 .stats{
-    width: 350px;
+    width: 315px;
     border: 1px solid red;
-    height: 500px;
-    margin: 10px;
+    height: 600px;
+    margin: 20px;
+    margin-top: 1px;
+    color: white;
+    text-align: center;
 }
 .healthLabel{
     font-family: 'Goldman', cursive;
-    color: lawngreen;
+    color: #00b712;
 }
 .hpBorder{
     width: 300px;
-    height: 40px;
+    height: 20px;
     border: 3px solid black;
 }
 .hpBar{
     width: 300px;
-    height: 40px;
-    background-color: limegreen;
+    height: 20px;
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
 }
 .kiLabel{
     font-family: 'Goldman', cursive;
-    color: #0e27be;
+    color: #60dfcd;
 }
 .kiBorder{
     width: 300px;
-    height: 30px;
+    height: 20px;
     border: 3px solid black;
 }
 .kiBar{
     width: 300px;
-    height: 30px;
-    background-color: #0e27be;
+    height: 20px;
+    background-color: #60dfcd;
+    background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);
 }
 #gokuStats{
     background-color: #ee4a02;
     background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
+    border: 3px solid #2a2a72;
 }
 #gokuStats h1{
     color: #2a2a72;
 }
 #vegetaStats{
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background-color: #29539b;
+    background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    border: 3px solid #ff4e00;
 }
 #vegetaStats h1{
     color: #ff4e00;
@@ -95,4 +99,37 @@ h3{
 }
 #vegetaStats h3{
     color: #ff4e00;
+}
+.moves{
+    color: white;
+    margin: 3px;
+}
+#movesVegeta{
+    color: #2a2a72;
+    background-color: #ee4a02;
+    background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
+    font-weight: bold;
+    border: .5px solid #ff4e00;
+}
+.ultimateMoves{
+    color: darkgoldenrod;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+#kiMoves{
+    color: white;
+    background-color: #60dfcd;
+    background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);
+}
+#healthMoves{
+    color: white;
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+}
+#movesGoku{
+    color: #ff4e00;
+    background-color: #29539b;
+    background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    font-weight: bold;
+    border: .5px solid #2a2a72;
 }
