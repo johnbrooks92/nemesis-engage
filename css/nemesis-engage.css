@@ -1,0 +1,31 @@
+#topRow {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    border-color: red;
+    justify-content: center;
+}
+.fighter{
+    margin: 15px 30px;
+    border: 1px solid;
+    height: 300px;
+    width:210px;
+    margin-top: 400px;
+}
+#sonGoku{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+}
+#princeVegeta{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+.fighter img{
+    height: 300px;
+}
+#bottomRow{
+    padding: 20px;
+    font: 20pt Arial;
+}
+
