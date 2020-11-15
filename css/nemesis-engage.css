@@ -1,31 +1,98 @@
+body{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
 #topRow {
     display: flex;
     flex-direction: row;
     border: 1px solid;
     border-color: red;
-    justify-content: center;
+    justify-content: space-between;
+    background-image: url("../img/goku-vegeta-wallpaper.jpg");
+    background-size: cover;
+    align-items: baseline;
 }
 .fighter{
     margin: 15px 30px;
-    border: 1px solid;
     height: 300px;
-    width:210px;
-    margin-top: 400px;
+    width: 210px;
 }
 #sonGoku{
-    background-color: #ff4e00;
-    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-
+    /*background-color: #ff4e00;*/
+    /*background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);*/
+    background-color: transparent;
 }
 #princeVegeta{
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    /*background-color: #2a2a72;*/
+    /*background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);*/
+    background-color: transparent;
 }
 .fighter img{
     height: 300px;
 }
 #bottomRow{
     padding: 20px;
-    font: 20pt Arial;
+    font-family: 'Source Code Pro', monospace;
+    color: lawngreen;
 }
-
+h1{
+    font-family: 'Goldman', cursive;
+    color: limegreen;
+}
+.stats{
+    width: 350px;
+    border: 1px solid red;
+    height: 500px;
+    margin: 10px;
+}
+.healthLabel{
+    font-family: 'Goldman', cursive;
+    color: lawngreen;
+}
+.hpBorder{
+    width: 300px;
+    height: 40px;
+    border: 3px solid black;
+}
+.hpBar{
+    width: 300px;
+    height: 40px;
+    background-color: limegreen;
+}
+.kiLabel{
+    font-family: 'Goldman', cursive;
+    color: #0e27be;
+}
+.kiBorder{
+    width: 300px;
+    height: 30px;
+    border: 3px solid black;
+}
+.kiBar{
+    width: 300px;
+    height: 30px;
+    background-color: #0e27be;
+}
+#gokuStats{
+    background-color: #ee4a02;
+    background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
+}
+#gokuStats h1{
+    color: #2a2a72;
+}
+#vegetaStats{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+#vegetaStats h1{
+    color: #ff4e00;
+}
+h3{
+    font-family: 'Goldman', cursive;
+}
+#gokuStats h3{
+    color: #2a2a72;
+}
+#vegetaStats h3{
+    color: #ff4e00;
+}

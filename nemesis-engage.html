@@ -2,24 +2,83 @@
 <html lang="en">
 <head>
     <title>Nemesis: Engage!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/nemesis-engage.css">
 </head>
 <body>
     <div id="container">
         <div id="topRow">
+            <div id="gokuStats" class="stats">
+                <h1>Goku</h1>
+                <span class="healthLabel">HP</span><br>
+                <div class="hpBorder">
+                    <div id="gokuHP" class="hpBar"></div>
+                </div>
+                <span class="kiLabel">KI</span><br>
+                <div class="kiBorder">
+                    <div id="gokuKi" class="kiBar"></div>
+                </div>
+                <p>
+                    <span class="standardsLabel"><h3>Standard Moves</h3></span>
+                </p>
+                <button onclick="kamehameha()">Kamehameha Wave</button><br>
+                <button onclick="solar()">Solar Flare</button><br>
+                <button onclick="meteor()">Meteor Combination</button><br>
+                <button onclick="dragonThrow()">Dragon Throw</button><br>
+                <p>
+                    <span class="ultimatesLabel"><h3>Ultimate Moves</h3></span>
+                </p>
+                <button onclick="spirit()">Spirit Bomb</button><br>
+            </div>
+
+
             <div id="sonGoku" class="fighter saiyan">
                 <img src="img/goku-avatar.png" class="character-image">
             </div>
+
+
             <div id="princeVegeta" class="fighter saiyan">
                 <img src="img/vegeta-avatar.png" class="character-image">
             </div>
+
+            <div id="vegetaStats" class="stats">
+                <h1>Vegeta</h1>
+                <span class="healthLabel">HP</span><br>
+                <div class="hpBorder">
+                    <div id="vegetaHP" class="hpBar"></div>
+                </div>
+                <span class="kiLabel">KI</span><br>
+                <div class="kiBorder">
+                    <div id="vegetaKi" class="kiBar"></div>
+                </div>
+                <p>
+                    <span class="standardsLabel"><h3>Standard Moves</h3></span>
+                </p>
+                <button onclick="galickGun()">Galick Gun</button><br>
+                <button onclick="lucora()">Lucora Gun</button><br>
+                <button onclick="fireworks()">Dirty Fireworks</button><br>
+                <button onclick="infinite()">Infinite Break</button><br>
+                <p>
+                    <span class="ultimatesLabel"><h3>Ultimate Moves</h3></span>
+                </p>
+                <button onclick="bigBang()">Big Bang Attack!</button><br>
+            </div>
+            </div>
         </div>
+    </div>
         <div id="bottomRow">
-            <h1> Welcome to Nemesis: Engage! </h1>
+            <h1> Nemesis: Engage </h1>
             <h3> Where Rivals Clash!</h3>
             <p>In Nemesis Engage, you will experience some of the greatest battles our developers have witnessed in lore spanning games, comics, and more. Select your battle and experience the rivalry first hand!</p>
         </div>
     </div>
-<script src="js/nemesis-engage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/nemesis-engage.js"></script>
 </body>
 </html>
