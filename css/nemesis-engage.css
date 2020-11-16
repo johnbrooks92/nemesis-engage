@@ -7,14 +7,13 @@ body{
     border: 1px solid;
     border-color: red;
     justify-content: space-between;
-    background-image: url("../img/goku-vegeta-wallpaper.jpg");
+    background-image: url("../img/wasteland.png");
     background-size: cover;
     align-items: flex-end;
 }
 .fighter{
     margin: 15px 30px;
-    height: 300px;
-    width: 210px;
+    height: 500px;
     align-self: baseline;
 }
 #sonGoku{
@@ -24,7 +23,8 @@ body{
     background-color: transparent;
 }
 .fighter img{
-    height: 300px;
+    height: 500px;
+    width: 325px;
 }
 #bottomRow{
     padding: 20px;
@@ -44,6 +44,11 @@ h1{
     margin-top: 1px;
     color: white;
     text-align: center;
+}
+.stats button {
+    border: 3px solid;
+    border-radius: 20px;
+    /*padding: 10px 35px;*/
 }
 .healthLabel{
     font-family: 'Goldman', cursive;
@@ -102,14 +107,12 @@ h3{
 }
 .moves{
     color: white;
-    margin: 3px;
+    margin: 2px;
 }
 #movesVegeta{
     color: #2a2a72;
     background-color: #ee4a02;
     background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
-    font-weight: bold;
-    border: .5px solid #ff4e00;
 }
 .ultimateMoves{
     color: darkgoldenrod;
@@ -126,10 +129,8 @@ h3{
     background-color: #00b712;
     background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
 }
-#movesGoku{
+#movesGoku {
     color: #ff4e00;
     background-color: #29539b;
     background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
-    font-weight: bold;
-    border: .5px solid #2a2a72;
 }
