@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>Nemesis: Engage!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,88 +11,141 @@
     <link rel="stylesheet" type="text/css" href="css/nemesis-engage.css">
 </head>
 <body>
-    <audio id="battleThemeSaiyans">
-        <source src="audio/battle-music-saiyans.mp3" type="audio/mpeg">
-    </audio>
-    <h1 id="enterNotification">Press Enter to Begin</h1>
-    <div id="container-fluid">
-        <div id="topRow">
-            <div id="gokuStats" class="stats">
-                <h1>Goku</h1>
-                <span class="healthLabel">HP</span><br>
-                <div class="hpBorder">
-                    <div id="gokuHP" class="hpBar"></div>
-                </div>
-                <span class="kiLabel">KI</span><br>
-                <div class="kiBorder">
-                    <div id="gokuKi" class="kiBar"></div>
-                </div>
-                <p>
-                    <span class="standardsLabel"><h3>Standard Moves</h3></span>
-                </p>
-                <button onclick="kamehameha()" class="moves" id="movesGoku">Kamehameha Wave</button> dmg: 110 ki: 155<br>
-                <button onclick="kiai()" class="moves" id="movesGoku">Kiai Blowback</button> dmg:50  ki: 65 <br>
-                <button onclick="kaioken()" class="moves" id="movesGoku">Kaioken Triple Attack</button> dmg: 95 ki: 130<br>
-                <button onclick="flurry()" class="moves" id="movesGoku">Fists of Flurry</button>dmg: 70  ki: 30
-                <p>
-                    <span class="ultimatesLabel" ><h3>Ultimate Moves</h3></span>
-                </p>
-                <button onclick="spirit()" class="ultimateMoves" id="ultimateMovesGoku">Spirit Bomb</button> dmg: 200 ki: 290
-                <p>
-                    <span class="vitalsLabel"><h3>Ki and Health</h3></span>
-                </p>
-                <button onclick="kiGoku()" class="moves" id="kiMoves">Charge Ki!</button> Gather your energy!<br>
-                <button onclick="recoverGoku()" class="moves" id="healthMoves">Recover Health</button> Senzu Bean! (max. 1)<br>
+<audio id="battleThemeSaiyans">
+    <source src="audio/battle-music-saiyans.mp3" type="audio/mpeg">
+</audio>
+<h1 id="enterNotification">Press Enter to Begin</h1>
+<div id="container-fluid">
+    <div id="topRow">
+        <div id="gokuStats" class="stats">
+            <h1>Goku</h1>
+            <span class="healthLabel">HP</span><br>
+            <div class="hpBorder">
+                <div id="gokuHP" class="hpBar"></div>
             </div>
-
-
-            <div id="sonGoku" class="fighter saiyan">
-                <img src="img/goku-base.png" alt ="gokuWhereYouGo" class="character-image-p1">
+            <span class="kiLabel">KI</span><br>
+            <div class="kiBorder">
+                <div id="gokuKi" class="kiBar"></div>
             </div>
-
-
-            <div id="princeVegeta" class="fighter saiyan">
-                <img src="img/vegeta-base.png" alt="vegetaWhereYouGo" class="character-image-p2">
+            <br>
+            <div>
+                <h3 class="standardsLabel">Standard Moves</h3>
             </div>
-
-            <div id="vegetaStats" class="stats">
-                <h1>Vegeta</h1>
-                <span class="healthLabel">HP</span><br>
-                <div class="hpBorder">
-                    <div id="vegetaHP" class="hpBar"></div>
-                </div>
-                <span class="kiLabel">KI</span><br>
-                <div class="kiBorder">
-                    <div id="vegetaKi" class="kiBar"></div>
-                </div>
-                <p>
-                    <span class="standardsLabel"><h3>Standard Moves</h3></span>
-                </p>
-                <button onclick="galickGun()" class="moves" id="movesVegeta">Galick Gun</button> dmg: 120 ki: 160<br>
-                <button onclick="lucora()" class="moves" id="movesVegeta">Lucora Gun</button> dmg: 65 ki: 75<br>
-                <button onclick="fireworks()" class="moves" id="movesVegeta">Dirty Fireworks</button> dmg: 85 ki: 120 <br>
-                <button onclick="infinite()" class="moves" id="movesVegeta">Infinite Break</button> dmg: 55 ki: 30 <br>
-                <p>
-                    <span class="ultimatesLabel"><h3>Ultimate Moves</h3></span>
-                </p>
-                <button onclick="finalFlash()" class="ultimateMoves" id="ultimateMovesVegeta">Final Flash</button> dmg: 160 ki: 235 <br>
-                <p>
-                    <span class="vitalsLabel"><h3>Ki and Health</h3></span>
-                </p>
-                <button onclick="kiVegeta()" class="moves" id="kiMoves">Charge Ki!</button> Gather your energy!<br>
-                <button onclick="recoverVegeta()" class="moves" id="healthMoves">Recover Health</button> Senzu Bean! (max. 1)<br>
+            <button onclick="kamehameha()" class="moves movesGoku" id="movesGoku1">Kamehameha Wave</button>
+            ki: 155<br>
+            <button onclick="kiai()" class="moves movesGoku" id="movesGoku2">Kiai Blowback</button>
+            ki: 65 <br>
+            <button onclick="kaioken()" class="moves movesGoku" id="movesGoku3">Kaioken Triple Attack</button>
+            ki: 130<br>
+            <button onclick="flurry()" class="moves movesGoku" id="movesGoku4">Fists of Flurry</button>
+            ki: 30<br>
+            <br>
+            <div>
+                <h3 class="ultimatesLabel">Ultimate Moves</h3>
             </div>
+            <button onclick="spirit()" class="ultimateMoves ultimateMovesGoku" id="ultimateMovesGoku1">Spirit Bomb
+            </button>
+            ki: 290<br>
+            <br>
+            <div>
+                <h3 class="vitalsLabel">Ki and Health</h3>
+            </div>
+            <button onclick="kiGoku()" class="moves kiMoves" id="kiMoves1">Charge Ki!</button>
+            Gather your energy!<br>
+            <button onclick="recoverGoku()" class="moves healthMoves" id="healthMoves1">Recover Health</button>
+            Senzu Bean! (max. 1)<br>
+            <div class="transformationButton">
+                <h3 class="standardsLabel">Transformations</h3>
+            <button onclick="superSaiyanGoku()" class="transformation transformGoku" id="transformGoku1">Super Saiyan</button>
+            boost: 1.25 ki: 125<br>
+            <button onclick="superSaiyan2Goku()" class="transformation transformGoku" id="transformGoku2">Super Saiyan 2</button>
+            boost: 1.5 ki: 150<br>
+            <button onclick="superSaiyan3Goku()" class="transformation transformGoku" id="transformGoku3">Super Saiyan 3</button>
+            boost: 1.75 ki: 175 <br>
+            <button onclick="superSaiyanGodGoku()" class="transformation transformGoku" id="transformGoku4">SS God</button>
+            boost 2.0 ki: 200 <br>
+            <button onclick="superSaiyanGodSuperSaiyanGoku()" class="transformation transformGoku" id="transformGoku5">SS God SS</button>
+            boost 2.5 ki: 250  <br>
+            </div>
+        </div>
+
+
+        <div id="sonGoku" class="fighter saiyan">
+            <img src="img/goku-base.png" alt="gokuWhereYouGo" class="character-image-p1">
+        </div>
+
+
+        <div id="princeVegeta" class="fighter saiyan">
+            <img src="img/vegeta-base.png" alt="vegetaWhereYouGo" class="character-image-p2">
+        </div>
+
+        <div id="vegetaStats" class="stats">
+            <h1>Vegeta</h1>
+            <span class="healthLabel">HP</span><br>
+            <div class="hpBorder">
+                <div id="vegetaHP" class="hpBar"></div>
+            </div>
+            <span class="kiLabel">KI</span><br>
+            <div class="kiBorder">
+                <div id="vegetaKi" class="kiBar"></div>
+            </div>
+            <br>
+            <div>
+                <h3 class="standardsLabel">Standard Moves</h3>
+            </div>
+            <button onclick="galickGun()" class="moves movesVegeta" id="movesVegeta1">Galick Gun</button>
+            ki: 160<br>
+            <button onclick="lucora()" class="moves movesVegeta" id="movesVegeta2">Lucora Gun</button>
+            ki: 75<br>
+            <button onclick="fireworks()" class="moves movesVegeta" id="movesVegeta3">Dirty Fireworks</button>
+            ki: 120 <br>
+            <button onclick="infinite()" class="moves movesVegeta" id="movesVegeta4">Infinite Break</button>
+            ki: 30 <br>
+            <br>
+            <div>
+                <h3 class="ultimatesLabel">Ultimate Moves</h3>
+            </div>
+            <button onclick="finalFlash()" class="ultimateMoves ultimateMovesVegeta" id="ultimateMovesVegeta1">Final
+                Flash
+            </button>
+            ki: 235 <br>
+            <br>
+            <div>
+                <h3 class="vitalsLabel">Ki and Health</h3>
+            <button onclick="kiVegeta()" class="moves kiMoves" id="kiMoves2">Charge Ki!</button>
+            Gather your energy!<br>
+
+            <button onclick="recoverVegeta()" class="moves healthMoves" id="healthMoves2">Recover Health</button>
+            Senzu Bean! (max. 1)<br>
+            </div>
+            <div class="transformationButton">
+            <h3 class="standardsLabel">Transformations</h3>
+            <button onclick="superSaiyanVegeta()" class="transformation transformVegeta" id="transformVegeta1">Super Saiyan</button>
+            boost: 1.25 ki: 125<br>
+            <button onclick="majinVegeta()" class="transformation transformVegeta" id="transformVegeta2">Majin (SS2)</button>
+            boost: 1.5 ki: 150<br>
+            <button onclick="superSaiyan3Vegeta()" class="transformation transformVegeta" id="transformVegeta3">Super Saiyan 3</button>
+            boost: 1.75 ki: 175 <br>
+            <button onclick="superSaiyanGodVegeta()" class="transformation transformVegeta" id="transformVegeta4">SS God</button>
+            boost 2.0 ki: 200 <br>
+            <button onclick="superSaiyanGodSuperSaiyanVegeta()" class="transformation transformVegeta" id="transformVegeta5">SS God SS</button>
+            boost 2.5 ki: 250  <br>
             </div>
         </div>
     </div>
-        <div id="bottomRow">
-            <h1> Nemesis: Engage </h1>
-            <h3> Where Rivals Clash!</h3>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="js/nemesis-engage.js"></script>
+</div>
+<div id="bottomRow">
+    <h1> Nemesis: Engage </h1>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+<script src="js/nemesis-engage.js"></script>
 </body>
 </html>
