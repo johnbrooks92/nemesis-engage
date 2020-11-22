@@ -18,15 +18,10 @@ body{
     height: 500px;
     align-self: baseline;
 }
-#sonGoku{
-    background-color: transparent;
-}
-#princeVegeta{
-    background-color: transparent;
-}
 .fighter img{
     height: 500px;
     width: 325px;
+    background-color: transparent;
 }
 #bottomRow{
     font-family: 'Source Code Pro', monospace;
@@ -148,33 +143,33 @@ h3{
 }
 #transformVegeta1, #transformVegeta2, #transformVegeta3 {
     color: #ffdd00;
-    background-color: #20bf55;
-    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 #transformVegeta4{
     color: #ff006f;
-    background-color: #20bf55;
-    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 #transformVegeta5{
     color: #05daf5;
-    background-color: #20bf55;
-    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 #transformGoku1, #transformGoku2, #transformGoku3 {
     color: #ffdd00;
-    background-color: #20bf55;
-    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 #transformGoku4{
     color: #ff006f;
-    background-color: #20bf55;
-    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 #transformGoku5 {
-    color: #05daf5;
-    background-color: #20bf55;
-    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    color: #15919f;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 /*.transformationButton:hover{*/
 /*    border: 1px solid silver;*/
