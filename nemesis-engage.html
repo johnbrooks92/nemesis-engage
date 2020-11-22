@@ -12,7 +12,7 @@
 </head>
 <body>
 <audio id="battleThemeSaiyans">
-    <source src="audio/battle-music-saiyans.mp3" type="audio/mpeg">
+    <source src="audio/battle-theme-trap.mp3" type="audio/mpeg">
 </audio>
 <h1 id="enterNotification">Press Enter to Begin</h1>
 <div id="container-fluid">
@@ -31,22 +31,36 @@
             <div>
                 <h3 class="standardsLabel">Standard Moves</h3>
             </div>
+
+            <!--Kamehameha Button-->
             <button onclick="kamehameha()" class="moves movesGoku" id="movesGoku1">Kamehameha Wave</button>
             ki: 155<br>
+
+
+
+            <!--Kiai Button-->
             <button onclick="kiai()" class="moves movesGoku" id="movesGoku2">Kiai Blowback</button>
             ki: 65 <br>
+
+
+            <!--Kaioken Triple Attack Button-->
             <button onclick="kaioken()" class="moves movesGoku" id="movesGoku3">Kaioken Triple Attack</button>
             ki: 130<br>
+
+            <!--Fists of Flurry Button-->
             <button onclick="flurry()" class="moves movesGoku" id="movesGoku4">Fists of Flurry</button>
             ki: 30<br>
             <br>
             <div>
                 <h3 class="ultimatesLabel">Ultimate Moves</h3>
             </div>
-            <button onclick="spirit()" class="ultimateMoves ultimateMovesGoku" id="ultimateMovesGoku1">Spirit Bomb
-            </button>
+
+            <!--Spirit Bomb Button-->
+            <button onclick="spirit()" class="ultimateMoves ultimateMovesGoku" id="ultimateMovesGoku1">Spirit Bomb</button>
             ki: 290<br>
             <br>
+
+            <!--Health and Ki-->
             <div>
                 <h3 class="vitalsLabel">Ki and Health</h3>
             </div>
@@ -69,7 +83,7 @@
             </div>
         </div>
 
-        <!--Goku Images/Audio-->
+        <!--Goku Images/Audio for Transformations-->
         <!--Base Form-->
         <div id="sonGokuBase" class="fighter saiyan">
             <img src="img/goku-base.png" alt="gokuWhereYouGo" class="character-image-p1">
@@ -114,11 +128,77 @@
         <audio id="ssGssScreamGoku">
             <source src="audio/goku-transform-ssgss.mp3" type="audio/mpeg">
         </audio>
+        <!--Media for Moves-->
 
+        <!--Kamehameha Images/Audio-->
+        <audio id="kameWave">
+            <source src="audio/goku-kamehameha.mp3" type="audio/mpeg">
+        </audio>
+        <div id="kameVideo">
+            <img src="img/goku-kamehameha-base.gif" alt="whereIsMyKamehameha" width="375">
+        </div>
 
+        <!--Kiai Images/Audio-->
+        <audio id="kiaiAttack">
+            <source src="audio/goku-kiai.mp3" type="audio/mpeg">
+        </audio>
+        <div id="kiaiVideo">
+            <img src="img/goku-kiai-blowback.webp" alt="whereIsMyKiai" width="375">
+        </div>
 
-        <!--Vegeta Images/Audio-->
+        <!--Kaioken Triple Attack Images/Audio-->
+        <audio id="kaiokenAudio">
+            <source src="audio/goku-kaioken-triple-attack.mp3" type="audio/mpeg">
+        </audio>
+        <div id="kaiokenVideo">
+            <img src="img/goku-kaioken-attack.gif" alt="whereIsMyKaioken" width=375">
+        </div>
 
+        <!--Kaioken Triple Attack Images/Audio-->
+        <audio id="fistsAudio">
+            <source src="audio/goku-fists-flurry.mp3" type="audio/mpeg">
+        </audio>
+        <div id="fistsVideo">
+            <img src="img/goku-fists-flurry.gif" alt="whereIsMyFist" width="375">
+        </div>
+
+        <!--Vegeta Images/Audio for Moves-->
+
+        <!--Media for Moves-->
+
+        <!--Galick Gun Images/Audio-->
+        <audio id="galickAudio">
+            <source src="audio/vegeta-galick-gun.mp3" type="audio/mpeg">
+        </audio>
+        <div id="galickVideo">
+            <img src="img/vegeta-galick-gun-base.gif" alt="whereIsMyGalick" width="375">
+        </div>
+
+        <!--Lucora Gun Images/Audio-->
+        <audio id="lucoraAudio">
+            <source src="audio/vegeta-lucora-gun.mp3" type="audio/mpeg">
+        </audio>
+        <div id="lucoraVideo">
+            <img src="img/vegeta-lucora-gun.gif" alt="whereIsMyLucora" width="375">
+        </div>
+
+        <!--Dirty Fireworks Images/Audio-->
+        <audio id="fireworksAudio">
+            <source src="audio/vegeta-dirty-fireworks.mp3" type="audio/mpeg">
+        </audio>
+        <div id="fireworksVideo">
+            <img src="img/vegeta-dirty-fireworks.gif" alt="whereIsMyFireworks" width=375">
+        </div>
+
+        <!--Infinite Break Images/Audio-->
+        <audio id="infiniteAudio">
+            <source src="audio/vegeta-infinite-break.mp3" type="audio/mpeg">
+        </audio>
+        <div id="infiniteVideo">
+            <img src="img/vegeta-infinite-break.gif" alt="whereIsMyInfinite" width="375">
+        </div>
+
+        <!-- Vegeta Transformations-->
 
         <!--Base Form-->
         <div id="princeVegetaBase" class="fighter saiyan">

@@ -37,6 +37,7 @@ var vegetaHP = document.getElementById('vegetaHP');
 var gokuKi = document.getElementById('gokuKi');
 var vegetaKi = document.getElementById('vegetaKi');
 
+
 //Define Health Variables
 var sonHP = 1200;
 var princeHP = 1200;
@@ -45,34 +46,13 @@ var princeKi = 1200;
 //
 //
 
-// Functionality for Moves
-function kamehameha(){
-    var hitChance = Math.round(Math.random()*10);
-    if (hitChance >=2 && sonKi > 155) {
-        var damage = Math.round(Math.random()*20)+10;
-        princeHP -= damage;
-        if (princeHP < 0){
-            princeHP = 0
-        }
-        bottomRow.innerHTML = "Goku landed the Kamehameha! The wave did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
-        var vegetaHPBarWidth = (princeHP/1200)*300;
-        vegetaHP.style.width = vegetaHPBarWidth + "px";
-    } else {
-        bottomRow.innerHTML = "You missed!";
-    }
-    if (princeHP === 0){
-        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
-    }
-    sonKi -= 155;
-    var gokuKiBarWidth = (sonKi/1200)*300;
-    gokuKi.style.width = gokuKiBarWidth + "px";
-}
 
 
 
 // Functionality for Transformations
 
 $(document).ready(function(){
+
     //Goku Transformation Effects
     $('#sonGokuSS').hide();
     $('#sonGokuSS2').hide();
@@ -187,33 +167,159 @@ $(document).ready(function(){
         $('#princeVegetaSSG').hide();
         $('audio#ssgssScreamVegeta')[0].play();
         $('#princeVegetaSSGSS').show();
-        bottomRow.innerHTML += "<br>Vegeta has ascended his God form!"
+        bottomRow.innerHTML += "<br>Vegeta has ascended past his God form!"
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
 
+// Functionality for Goku Moves when clicked
+function kamehameha(){
+    var hitChance = Math.round(Math.random()*10);
+    var kameGif = document.getElementById("kameVideo");
+    if (hitChance >=0) {
+        document.getElementById("kameWave").play();
+        kameGif.classList.toggle("show");
+        setTimeout(() => {
+        kameGif.classList.remove("show");
+        }, 9500)
+    } if (hitChance >=2 && sonKi > 155) {
+        var damage = Math.round(Math.random()*20+25);
+        princeHP -= damage;
+        if (princeHP < 0){
+            princeHP = 0
+        }
+        bottomRow.innerHTML = "Goku landed the Kamehameha! The wave did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var vegetaHPBarWidth = (princeHP/1200)*300;
+        vegetaHP.style.width = vegetaHPBarWidth + "px";
+    } else {
+        bottomRow.innerHTML = "You missed!";
+    }
+    if (princeHP === 0){
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
+    }
+    sonKi -= 155;
+    var gokuKiBarWidth = (sonKi/1200)*300;
+    gokuKi.style.width = gokuKiBarWidth + "px";
+}
+
+function kiai(){
+    var hitChance = Math.round(Math.random()*10);
+    var kiaiGif = document.getElementById("kiaiVideo");
+    if (hitChance >=0) {
+        document.getElementById("kiaiAttack").play();
+        kiaiGif.classList.toggle("show");
+        setTimeout(() => {
+            kiaiGif.classList.remove("show");
+        }, 2500)
+    } if (hitChance >=1 && sonKi > 65) {
+        var damage = Math.round(Math.random()*20+10);
+        princeHP -= damage;
+        if (princeHP < 0){
+            princeHP = 0
+        }
+        bottomRow.innerHTML = "Goku landed the Kiai Blowback! The attack did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var vegetaHPBarWidth = (princeHP/1200)*300;
+        vegetaHP.style.width = vegetaHPBarWidth + "px";
+    } else {
+        bottomRow.innerHTML = "You missed!";
+    }
+    if (princeHP === 0){
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
+    }
+    sonKi -= 65;
+    var gokuKiBarWidth = (sonKi/1200)*300;
+    gokuKi.style.width = gokuKiBarWidth + "px";
+}
+
+function kaioken(){
+    var hitChance = Math.round(Math.random()*10);
+    var kaiokenGif = document.getElementById("kaiokenVideo");
+    if (hitChance >=0) {
+        document.getElementById("kaiokenAudio").play();
+        kaiokenGif.classList.toggle("show");
+        setTimeout(() => {
+            kaiokenGif.classList.remove("show");
+        }, 2000)
+    } if (hitChance >=2 && sonKi > 130) {
+        var damage = Math.round(Math.random()*20+15);
+        princeHP -= damage;
+        if (princeHP < 0){
+            princeHP = 0
+        }
+        bottomRow.innerHTML = "Goku landed the Kaioken Triple Attack! The attack did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var vegetaHPBarWidth = (princeHP/1200)*300;
+        vegetaHP.style.width = vegetaHPBarWidth + "px";
+    } else {
+        bottomRow.innerHTML = "You missed!";
+    }
+    if (princeHP === 0){
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
+    }
+    sonKi -= 130;
+    var gokuKiBarWidth = (sonKi/1200)*300;
+    gokuKi.style.width = gokuKiBarWidth + "px";
+}
+
+function flurry(){
+    var hitChance = Math.round(Math.random()*10);
+    var flurryGif = document.getElementById("fistsVideo");
+    if (hitChance >=0) {
+        document.getElementById("fistsAudio").play();
+        flurryGif.classList.toggle("show");
+        setTimeout(() => {
+            flurryGif.classList.remove("show");
+        }, 2000)
+    } if (hitChance >=1 && sonKi > 30) {
+        var damage = Math.round(Math.random()*20+5);
+        princeHP -= damage;
+        if (princeHP < 0){
+            princeHP = 0
+        }
+        bottomRow.innerHTML = "Goku landed the Fist of Flurry! The attack did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var vegetaHPBarWidth = (princeHP/1200)*300;
+        vegetaHP.style.width = vegetaHPBarWidth + "px";
+    } else {
+        bottomRow.innerHTML = "You missed!";
+    }
+    if (princeHP === 0){
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
+    }
+    sonKi -= 30;
+    var gokuKiBarWidth = (sonKi/1200)*300;
+    gokuKi.style.width = gokuKiBarWidth + "px";
+}
 
 
+//Function for Vegeta Moves
 
-
-
-
-
-
-
+function galickGun(){
+    var hitChance = Math.round(Math.random()*10);
+    var galickGif = document.getElementById("galickVideo");
+    if (hitChance >=0) {
+        document.getElementById("galickAudio").play();
+        galickGif.classList.toggle("show");
+        setTimeout(() => {
+            galickGif.classList.remove("show");
+        }, 9500)
+    } if (hitChance >=2 && princeKi > 160) {
+        var damage = Math.round(Math.random()*20+28);
+        sonHP -= damage;
+        if (sonHP < 0){
+            sonHP = 0
+        }
+        bottomRow.innerHTML = "Vegeta landed the Galick Gun! The wave did " + damage + " HP in damage. Goku now has " + princeHP + " HP remaining.";
+        var gokuHPBarWidth = (princeHP/1200)*300;
+        gokuHP.style.width = gokuHPBarWidth + "px";
+    } else {
+        bottomRow.innerHTML = "You missed!";
+    }
+    if (sonHP === 0){
+        bottomRow.innerHTML += "<br>Vegeta had defeated Goku in the duel of the rivals!"
+    }
+    princeKi -= 160;
+    var vegetaKiBarWidth = (sonKi/1200)*300;
+    vegetaKi.style.width = vegetaKiBarWidth + "px";
+}
 
 
 
