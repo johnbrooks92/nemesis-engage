@@ -80,33 +80,118 @@ $(document).ready(function(){
     $('#sonGokuSSG').hide();
     $('#sonGokuSSGSS').hide();
 
-
-
     $('#transformGoku1').click(function(){
         $('#sonGokuBase').hide();
+        $('#sonGokuSS2').hide();
+        $('#sonGokuSS3').hide();
+        $('#sonGokuSSG').hide();
+        $('#sonGokuSSGSS').hide();
         $('audio#ssScreamGoku')[0].play();
         $('#sonGokuSS').show();
     });
     $('#transformGoku2').click(function(){
+        $('#sonGokuBase').hide();
         $('#sonGokuSS').hide();
+        $('#sonGokuSS3').hide();
+        $('#sonGokuSSG').hide();
+        $('#sonGokuSSGSS').hide();
         $('audio#ss2ScreamGoku')[0].play();
         $('#sonGokuSS2').show();
     });
     $('#transformGoku3').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
         $('#sonGokuSS2').hide();
+        $('#sonGokuSSG').hide();
+        $('#sonGokuSSGSS').hide();
         $('audio#ss3ScreamGoku')[0].play();
         $('#sonGokuSS3').show();
     });
     $('#transformGoku4').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
+        $('#sonGokuSS2').hide();
         $('#sonGokuSS3').hide();
+        $('#sonGokuSSGSS').hide();
         $('audio#ssGScreamGoku')[0].play();
         $('#sonGokuSSG').show();
     });
     $('#transformGoku5').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
+        $('#sonGokuSS2').hide();
+        $('#sonGokuSS3').hide();
         $('#sonGokuSSG').hide();
         $('audio#ssGssScreamGoku')[0].play();
         $('#sonGokuSSGSS').show();
     });
+
+
+//Vegeta Transformation Effects
+    $('#princeVegetaSS').hide();
+    $('#princeVegetaMajin').hide();
+    $('#princeVegetaSS3').hide();
+    $('#princeVegetaSSG').hide();
+    $('#princeVegetaSSGSS').hide();
+
+    $('#transformVegeta1').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSG').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#ssScreamVegeta')[0].play();
+        $('#princeVegetaSS').show();
+    });
+    $('#transformVegeta2').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSG').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#majinScreamVegeta')[0].play();
+        $('#princeVegetaMajin').show();
+    });
+    $('#transformVegeta3').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSSG').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#ss3ScreamVegeta')[0].play();
+        $('#princeVegetaSS3').show();
+    });
+    $('#transformVegeta4').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#ssgScreamVegeta')[0].play();
+        $('#princeVegetaSSG').show();
+    });
+    $('#transformVegeta5').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSG').hide();
+        $('audio#ssgssScreamVegeta')[0].play();
+        $('#princeVegetaSSGSS').show();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
