@@ -208,6 +208,9 @@ h3{
 #galickVideo, #lucoraVideo, #fireworksVideo, #infiniteVideo {
     display: none;
 }
+#spiritVideo, #finalVideo {
+    display: none;
+}
 .show {
     display: block !important;
 }
