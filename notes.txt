@@ -1,0 +1,38 @@
+Current tasks for the project over the holidaya:
+
+- Update Names for Classes and IDs on all elements for characters to 1v2 functionality instead of Goku vs Vegeta
+
+- Create an API or JSON file for the Character Data
+
+- Render the following project structures:
+    - Title Page (Press Start)
+    - Main Menu Page (Table of Contents Below)
+    - Create a Character Select Screen universal to all modes.
+    - Battle Page (current demo)
+    - Results Screen
+
+ CONTENTS OF MAIN MENU PAGE
+
+GAME MODES
+    - Story Mode (Any type.)
+    - Single Player Classic (Turn-Based)
+    - Two Player Classic (Turn-Based)
+    - Survival (Turn-Based)
+    - Tournament of Rivals (Turn-Based)
+    - Adventure (Arkham-type battle system)
+    - Mini-Games (Any type created in story or adventure.)
+SHOP
+    - Unlockables (Stats Boosts, New Skins, New Transformations, New Moves, 3rd Rival Character for each series, etc.)
+    - Gallery
+SETTINGS
+    - General
+    - Account
+    - Save/Load
+
+
+Concepts to explore:
+- Possibly partial turn-based system and partial standard 2-D fighter system.
+- Adventure mode revolving around portal concept from class (Portal = jump to different universe)?
+- Adventure mode revolving around universes crossing. Link characters from different shows together?
+- Adventure mode is 360 degrees eventually with Arkham-style fighting system for henchmen,
+but turn-based style for large-scale battles, with 2-D fighter system for 1v1s. Boss battle = mixture of all types.

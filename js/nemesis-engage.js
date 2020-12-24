@@ -149,7 +149,7 @@ $(document).ready(function(){
         $('#princeVegetaSSGSS').hide();
         $('audio#ss3ScreamVegeta')[0].play();
         $('#princeVegetaSS3').show();
-        bottomRow.innerHTML += "<br>Vegeta takes things futher beyond!"
+        bottomRow.innerHTML += "<br>Vegeta takes things further beyond!"
     });
     $('#transformVegeta4').click(function(){
         $('#princeVegetaBase').hide();
@@ -445,8 +445,8 @@ function finalFlash(){
         document.getElementById("finalAudio").play();
         finalGif.classList.toggle("show");
         setTimeout(() => {
-            finalGif .classList.remove("show");
-        }, 3000)
+            finalGif.classList.remove("show");
+        }, 6000)
     } if (hitChance >=2 && princeKi > 235) {
         var damage = Math.round(Math.random()*75+65);
         sonHP -= damage;
