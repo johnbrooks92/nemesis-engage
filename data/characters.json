@@ -1,0 +1,154 @@
+{
+  "characters": [
+    {
+      "name": "Son Goku",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "1"
+    },
+    {
+      "name": "Prince Vegeta",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "2"
+    },
+    {
+      "name": "Naruto Uzumaki",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "3"
+    },
+    {
+      "name": "Sasuke Uchiha",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "4"
+    },
+    {
+      "name": "Superman, Clark Kent",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "5"
+    },
+    {
+      "name": "Batman, Bruce Wayne",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "6"
+    },
+    {
+      "name": "Obi-Wan Kenobi, Ben Kenobi",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "7"
+    },
+    {
+      "name": "Anakin Skywalker, Darth Vader",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "8"
+    },
+    {
+      "name": "Optimus Prime",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "9"
+    },
+    {
+      "name": "Megatron",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "yes",
+      "rivals": "",
+      "id": "10"
+    },
+    {
+      "name": "Frieza",
+      "moves": "",
+      "ultimate": "",
+      "transformations": ""
+      "series": "",
+      "unlock": "no",
+      "rivals": "",
+      "id": "11"
+    },
+    {
+      "name": "Kakashi Hatake",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "no",
+      "rivals": "",
+      "id": "12"
+    },
+    {
+      "name": "The Flash, Barry Allen",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "no",
+      "rivals": "",
+      "id": "13"
+    },
+    {
+      "name": "Ahsoka Tano",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "no",
+      "rivals": "",
+      "id": "14"
+    },
+    {
+      "name": "Starscream",
+      "moves": "",
+      "ultimate": "",
+      "transformations": "",
+      "series": "",
+      "unlock": "no",
+      "rivals": "",
+      "id": "15"
+    }
+  ]
+}
