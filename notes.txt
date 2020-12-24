@@ -2,14 +2,27 @@ Current tasks for the project over the holidaya:
 
 - Update Names for Classes and IDs on all elements for characters to 1v2 functionality instead of Goku vs Vegeta
 
+
 - Create an API or JSON file for the Character Data
+JSON FILE COMPLETED
 
 - Render the following project structures:
     - Title Page (Press Start)
+    roll with what we already have for now. Possibly add images to existing title screen and touch up the font.
     - Main Menu Page (Table of Contents Below)
+    this is on the backburner for the time being until modes are made
     - Create a Character Select Screen universal to all modes.
+
     - Battle Page (current demo)
+    reduce number of usable moves to 3 + ultimate.
+
     - Results Screen
+
+
+
+
+
+
 
  CONTENTS OF MAIN MENU PAGE
 
