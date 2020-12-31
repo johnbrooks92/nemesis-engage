@@ -8,6 +8,12 @@
       "series": "Dragonball",
       "unlock": "yes",
       "rivals": "Prince Vegeta, Emperor Frieza",
+      "atk": 20,
+      "def": 17,
+      "speed": 17,
+      "atkaura": 17,
+      "defaura": 19,
+      "total": 90,
       "id": "1"
     },
     {
@@ -18,6 +24,11 @@
       "series": "Dragonball",
       "unlock": "yes",
       "rivals": "Son Goku, Emperor Frieza",
+      "atk": 17,
+      "def": 13,
+      "speed": 23,
+      "atkaura": 20,
+      "defaura": 17,
       "id": "2"
     },
     {
@@ -28,6 +39,11 @@
       "series": "Naruto",
       "unlock": "yes",
       "rivals": "Sasuke Uchiha, Kakashi Hatake",
+      "atk": 22,
+      "def": 17,
+      "speed": 15,
+      "atkaura": 21,
+      "defaura": 15,
       "id": "3"
     },
     {
@@ -38,6 +54,11 @@
       "series": "Naruto",
       "unlock": "yes",
       "rivals": "Naruto Uzumaki, Kakashi Hatake",
+      "atk": 16,
+      "def": 14,
+      "speed": 22,
+      "atkaura": 24,
+      "defaura": 14,
       "id": "4"
     },
     {
@@ -48,6 +69,11 @@
       "series": "DC",
       "unlock": "yes",
       "rivals": "Batman, Bruce Wayne, The Flash, Barry Allen",
+      "atk": 23,
+      "def": 19,
+      "speed": 16,
+      "atkaura": 21,
+      "defaura": 11,
       "id": "5"
     },
     {
@@ -58,6 +84,11 @@
       "series": "DC",
       "unlock": "yes",
       "rivals": "Superman, Clark Kent, The Flash, Barry Allen",
+      "atk": 17,
+      "def": 23,
+      "speed": 16,
+      "atkaura": 14,
+      "defaura": 20,
       "id": "6"
     },
     {
@@ -68,6 +99,11 @@
       "series": "StarWars",
       "unlock": "yes",
       "rivals": "Anakin Skywalker, Darth Vader, Ahsoka Tano",
+      "atk": 12,
+      "def": 18,
+      "speed": 16,
+      "atkaura": 19,
+      "defaura": 25,
       "id": "7"
     },
     {
@@ -78,26 +114,41 @@
       "series": "StarWars",
       "unlock": "yes",
       "rivals": "Obi-Wan Kenobi, Ben Kenobi, Ahsoka Tano",
+      "atk": 16,
+      "def": 12,
+      "speed": 18,
+      "atkaura": 25,
+      "defaura": 19,
       "id": "8"
     },
     {
       "name": "Optimus Prime",
-      "moves": "Laser Blaster, Star Saber, Skyboom Shield",
+      "moves": "Full Force Punch, Star Saber, Skyboom Shield",
       "ultimate": "Prime Reckoning",
       "transformations": "G1, Semi-Truck, Armada",
       "series": "Transformers",
       "unlock": "yes",
       "rivals": "Megatron, Starscream",
+      "atk": 22,
+      "def": 20,
+      "speed": 8,
+      "atkaura": 16,
+      "defaura": 24,
       "id": "9"
     },
     {
       "name": "Megatron",
-      "moves": "Requiem Blaster, Star Saber, Skyboom Shield",
+      "moves": "Metal Mash, Requiem Blaster, Skyboom Shield",
       "ultimate": "Mega Melting",
       "transformations": "G1, War Tank, Armada",
       "series": "Transformers",
       "unlock": "yes",
       "rivals": "Optimus Prime, Starscream",
+      "atk": 22,
+      "def": 16,
+      "speed": 8,
+      "atkaura": 24,
+      "defaura": 20,
       "id": "10"
     },
     {
@@ -108,6 +159,11 @@
       "series": "Dragonball",
       "unlock": "no",
       "rivals": "Son Goku, Prince Vegeta",
+      "atk": 15,
+      "def": 12,
+      "speed": 24,
+      "atkaura": 25,
+      "defaura": 14,
       "id": "11"
     },
     {
@@ -118,6 +174,11 @@
       "series": "Naruto",
       "unlock": "no",
       "rivals": "Naruto Uzumaki, Sasuke Uchiha",
+      "atk": 20,
+      "def": 18,
+      "speed": 17,
+      "atkaura": 21,
+      "defaura": 14,
       "id": "12"
     },
     {
@@ -128,6 +189,11 @@
       "series": "DC",
       "unlock": "no",
       "rivals": "Superman, Clark Kent, Batman, Bruce Wayne",
+      "atk": 20,
+      "def": 10,
+      "speed": 25,
+      "atkaura": 11,
+      "defaura": 24,
       "id": "13"
     },
     {
@@ -138,16 +204,26 @@
       "series": "StarWars",
       "unlock": "no",
       "rivals": "Obi-Wan Kenobi, Ben Kenobi, Anakin Skywalker, Darth Vader",
+      "atk": 15,
+      "def": 15,
+      "speed": 22,
+      "atkaura": 22,
+      "defaura": 16,
       "id": "14"
     },
     {
       "name": "Starscream",
-      "moves": "Laser Blaster, Star Saber, Skyboom Shield",
+      "moves": "Scream's Rage, Star Saber, Skyboom Shield",
       "ultimate": "SuperNova Fireworks",
       "transformations": "G1, Jet Plane, Armada",
       "series": "Transformers",
       "unlock": "no",
       "rivals": "Optimus Prime, Megatron",
+      "atk": 20,
+      "def": 20,
+      "speed": 10,
+      "atkaura": 20,
+      "defaura": 20,
       "id": "15"
     }
   ]
