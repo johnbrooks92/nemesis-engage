@@ -11,348 +11,41 @@
     <link rel="stylesheet" type="text/css" href="css/nemesis-engage.css">
 </head>
 <body>
-<audio id="battleThemeSaiyans">
-    <source src="audio/battle-theme-trap.mp3" type="audio/mpeg">
-</audio>
+<!--Opening Screen-->
+<div id="openingScreen">
 <h1 id="enterNotification">Press Enter to Begin</h1>
-<div id="container-fluid">
-    <div id="topRow">
-        <div id="p1Stats" class="stats">
-            <h1>p1</h1>
-            <span class="healthLabel">HP</span><br>
-            <div class="hpBorder">
-                <div id="p1HP" class="hpBar"></div>
-            </div>
-            <span class="kiLabel">KI</span><br>
-            <div class="kiBorder">
-                <div id="p1Ki" class="kiBar"></div>
-            </div>
-            <br>
-            <div>
-                <h3 class="standardsLabel">Standard Moves</h3>
-            </div>
-
-            <!--Kamehameha Button-->
-            <button onclick="kamehameha()" class="moves movesp1" id="movesp11">Kamehameha Wave</button>
-            ki: 155<br>
-
-
-
-            <!--Kiai Button-->
-            <button onclick="kiai()" class="moves movesp1" id="movesp12">Kiai Blowback</button>
-            ki: 65 <br>
-
-
-            <!--Kaioken Triple Attack Button-->
-            <button onclick="kaioken()" class="moves movesp1" id="movesp13">Kaioken Triple Attack</button>
-            ki: 130<br>
-
-            <!--Fists of Flurry Button-->
-            <button onclick="flurry()" class="moves movesp1" id="movesp14">Fists of Flurry</button>
-            ki: 30<br>
-            <br>
-            <div>
-                <h3 class="ultimatesLabel">Ultimate Moves</h3>
-            </div>
-
-            <!--Spirit Bomb Button-->
-            <button onclick="spirit()" class="ultimateMoves ultimateMovesp1" id="ultimateMovesp11">Spirit Bomb</button>
-            ki: 290<br>
-            <br>
-
-            <!--Health and Ki-->
-            <div>
-                <h3 class="vitalsLabel">Ki and Health</h3>
-            </div>
-            <button onclick="kip1()" class="moves kiMoves" id="kiMoves1">Charge Ki!</button>
-            Gather your energy!<br>
-            <button onclick="recoverp1()" class="moves healthMoves" id="healthMoves1">Recover Health</button>
-            Senzu Bean! (max. 1)<br>
-            <div class="transformationButton">
-                <h3 class="standardsLabel">Transformations</h3>
-            <button onclick="superSaiyanp1()" class="transformation transformp1" id="transformp11">Super Saiyan</button>
-            boost: 1.25 ki: 125<br>
-            <button onclick="superSaiyan2p1()" class="transformation transformp1" id="transformp12">Super Saiyan 2</button>
-            boost: 1.5 ki: 150<br>
-            <button onclick="superSaiyan3p1()" class="transformation transformp1" id="transformp13">Super Saiyan 3</button>
-            boost: 1.75 ki: 175 <br>
-            <button onclick="superSaiyanGodp1()" class="transformation transformp1" id="transformp14">SS God</button>
-            boost 2.0 ki: 200 <br>
-            <button onclick="superSaiyanGodSuperSaiyanp1()" class="transformation transformp1" id="transformp15">SS God SS</button>
-            boost 2.5 ki: 250  <br>
-            </div>
-        </div>
-
-        <!--p1 Images/Audio for Transformations-->
-        <!--Base Form-->
-        <div id="sonp1Base" class="fighter saiyan">
-            <img src="img/p1-base.png" alt="p1WhereYouGo" class="character-image-p1">
-        </div>
-
-        <!--SS Form-->
-        <div id="sonp1SS" class="fighter saiyan">
-            <img src="img/p1-ss1.png" alt="p1WhereYouGo" class="character-image-p1">
-        </div>
-        <audio id="ssScreamp1">
-            <source src="audio/p1-transform-ssj1.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS2 Form-->
-        <div id="sonp1SS2" class="fighter saiyan">
-            <img src="img/p1-ss2.png" alt="p1WhereYouGo" class="character-image-p1">
-        </div>
-        <audio id="ss2Screamp1">
-            <source src="audio/p1-transform-ssj2.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS3 Form-->
-        <div id="sonp1SS3" class="fighter saiyan">
-            <img src="img/p1-ss3.png" alt="p1WhereYouGo" class="character-image-p1">
-        </div>
-        <audio id="ss3Screamp1">
-            <source src="audio/p1-transform-ss3.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS God Form-->
-        <div id="sonp1SSG" class="fighter saiyan">
-            <img src="img/p1-ssg.png" alt="p1WhereYouGo" class="character-image-p1">
-        </div>
-        <audio id="ssGScreamp1">
-            <source src="audio/p1-transform-ssg.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS God SS Form-->
-        <div id="sonp1SSGSS" class="fighter saiyan">
-            <img src="img/p1-ssgss.png" alt="p1WhereYouGo" class="character-image-p1">
-        </div>
-        <audio id="ssGssScreamp1">
-            <source src="audio/p1-transform-ssgss.mp3" type="audio/mpeg">
-        </audio>
-        <!--Media for Moves-->
-
-        <!--Kamehameha Images/Audio-->
-        <audio id="kameWave">
-            <source src="audio/p1-kamehameha.mp3" type="audio/mpeg">
-        </audio>
-        <div id="kameVideo">
-            <img src="img/p1-kamehameha-base.gif" alt="whereIsMyKamehameha" width="375">
-        </div>
-
-        <!--Kiai Images/Audio-->
-        <audio id="kiaiAttack">
-            <source src="audio/p1-kiai.mp3" type="audio/mpeg">
-        </audio>
-        <div id="kiaiVideo">
-            <img src="img/p1-kiai-blowback.webp" alt="whereIsMyKiai" width="375">
-        </div>
-
-        <!--Kaioken Triple Attack Images/Audio-->
-        <audio id="kaiokenAudio">
-            <source src="audio/p1-kaioken-triple-attack.mp3" type="audio/mpeg">
-        </audio>
-        <div id="kaiokenVideo">
-            <img src="img/p1-kaioken-attack.gif" alt="whereIsMyKaioken" width=375">
-        </div>
-
-        <!--Fists of Flurry Images/Audio-->
-        <audio id="fistsAudio">
-            <source src="audio/p1-fists-flurry.mp3" type="audio/mpeg">
-        </audio>
-        <div id="fistsVideo">
-            <img src="img/p1-fists-flurry.gif" alt="whereIsMyFist" width="375">
-        </div>
-
-        <!--SpiritBomb Images/Audio-->
-        <audio id="spiritAudio">
-            <source src="audio/p1-spirit-bomb.mp3" type="audio/mpeg">
-        </audio>
-        <div id="spiritVideo">
-            <img src="img/p1-spirit-bomb.gif" alt="whereIsMySpiritBomb" width="375">
-        </div>
-
-
-
-        <!--p2 Images/Audio for Moves-->
-
-        <!--Media for Moves-->
-
-        <!--Galick Gun Images/Audio-->
-        <audio id="galickAudio">
-            <source src="audio/p2-galick-gun.mp3" type="audio/mpeg">
-        </audio>
-        <div id="galickVideo">
-            <img src="img/p2-galick-gun-base.gif" alt="whereIsMyGalick" width="375">
-        </div>
-
-        <!--Lucora Gun Images/Audio-->
-        <audio id="lucoraAudio">
-            <source src="audio/p2-lucora-gun.mp3" type="audio/mpeg">
-        </audio>
-        <div id="lucoraVideo">
-            <img src="img/p2-lucora-gun.gif" alt="whereIsMyLucora" width="375">
-        </div>
-
-        <!--Dirty Fireworks Images/Audio-->
-        <audio id="fireworksAudio">
-            <source src="audio/p2-dirty-fireworks.mp3" type="audio/mpeg">
-        </audio>
-        <div id="fireworksVideo">
-            <img src="img/p2-dirty-fireworks.gif" alt="whereIsMyFireworks" width=375">
-        </div>
-
-        <!--Infinite Break Images/Audio-->
-        <audio id="infiniteAudio">
-            <source src="audio/p2-infinite-break.mp3" type="audio/mpeg">
-        </audio>
-        <div id="infiniteVideo">
-            <img src="img/p2-infinite-break.gif" alt="whereIsMyInfinite" width="375">
-        </div>
-
-        <!--Final Flash Images/Audio-->
-        <audio id="finalAudio">
-            <source src="audio/p2-final-flash.mp3" type="audio/mpeg">
-        </audio>
-        <div id="finalVideo">
-            <img src="img/p2-final-flash-base.gif" alt="whereIsMyFist" width="375">
-        </div>
-
-
-        <!--Ki/Health Audio-->
-
-        <!--p1-->
-        <audio id="p1KiAudio">
-            <source src="audio/p1-powerup-sound.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="p1HealthAudio">
-            <source src="audio/p1-health-recover.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--p2-->
-        <audio id="p2KiAudio">
-            <source src="audio/p2-powerupsound-2.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="p2HealthAudio">
-            <source src="audio/p2-health-recover.mp3" type="audio/mpeg">
-        </audio>
-
-
-
-
-
-        <!-- p2 Transformations-->
-
-        <!--Base Form-->
-        <div id="princep2Base" class="fighter saiyan">
-            <img src="img/p2-base.png" alt="p2WhereYouGo" class="character-image-p2">
-        </div>
-
-        <!--SS Form-->
-        <div id="princep2SS" class="fighter saiyan">
-            <img src="img/p2-ss1.png" alt="p2WhereYouGo" class="character-image-p2">
-        </div>
-        <audio id="ssScreamp2">
-            <source src="audio/p2-transform-ss.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--Majin Form-->
-        <div id="princep2Majin" class="fighter saiyan">
-            <img src="img/p2-majin.png" alt="p2WhereYouGo" class="character-image-p2">
-        </div>
-        <audio id="majinScreamp2">
-            <source src="audio/p2-transform-majin.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS3 Form-->
-        <div id="princep2SS3" class="fighter saiyan">
-            <img src="img/p2-ss3.png" alt="p2WhereYouGo" class="character-image-p2">
-        </div>
-        <audio id="ss3Screamp2">
-            <source src="audio/p2-transform-ss3.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS God Form-->
-        <div id="princep2SSG" class="fighter saiyan">
-            <img src="img/p2-ssg.png" alt="p2WhereYouGo" class="character-image-p2">
-        </div>
-        <audio id="ssgScreamp2">
-            <source src="audio/p2-transform-ssg.mp3" type="audio/mpeg">
-        </audio>
-
-        <!--SS God SS Form-->
-        <div id="princep2SSGSS" class="fighter saiyan">
-            <img src="img/p2-ssgss.png" alt="p2WhereYouGo" class="character-image-p2">
-        </div>
-        <audio id="ssgssScreamp2">
-            <source src="audio/p2-transform-ssgss.mp3" type="audio/mpeg">
-        </audio>
-
-
-
-
-
-
-
-
-
-
-        <div id="p2Stats" class="stats">
-            <h1>p2</h1>
-            <span class="healthLabel">HP</span><br>
-            <div class="hpBorder">
-                <div id="p2HP" class="hpBar"></div>
-            </div>
-            <span class="kiLabel">KI</span><br>
-            <div class="kiBorder">
-                <div id="p2Ki" class="kiBar"></div>
-            </div>
-            <br>
-            <div>
-                <h3 class="standardsLabel">Standard Moves</h3>
-            </div>
-            <button onclick="galickGun()" class="moves movesp2" id="movesp21">Galick Gun</button>
-            ki: 160<br>
-            <button onclick="lucora()" class="moves movesp2" id="movesp22">Lucora Gun</button>
-            ki: 75<br>
-            <button onclick="fireworks()" class="moves movesp2" id="movesp23">Dirty Fireworks</button>
-            ki: 120 <br>
-            <button onclick="infinite()" class="moves movesp2" id="movesp24">Infinite Break</button>
-            ki: 30 <br>
-            <br>
-            <div>
-                <h3 class="ultimatesLabel">Ultimate Moves</h3>
-            </div>
-            <button onclick="finalFlash()" class="ultimateMoves ultimateMovesp2" id="ultimateMovesp21">Final
-                Flash
-            </button>
-            ki: 235 <br>
-            <br>
-            <div>
-                <h3 class="vitalsLabel">Ki and Health</h3>
-            <button onclick="kip2()" class="moves kiMoves" id="kiMoves2">Charge Ki!</button>
-            Gather your energy!<br>
-
-            <button onclick="recoverp2()" class="moves healthMoves" id="healthMoves2">Recover Health</button>
-            Senzu Bean! (max. 1)<br>
-            </div>
-            <div class="transformationButton">
-            <h3 class="standardsLabel">Transformations</h3>
-            <button onclick="superSaiyanp2()" class="transformation transformp2" id="transformp21">Super Saiyan</button>
-            boost: 1.25 ki: 125<br>
-            <button onclick="majinp2()" class="transformation transformp2" id="transformp22">Majin (SS2)</button>
-            boost: 1.5 ki: 150<br>
-            <button onclick="superSaiyan3p2()" class="transformation transformp2" id="transformp23">Super Saiyan 3</button>
-            boost: 1.75 ki: 175 <br>
-            <button onclick="superSaiyanGodp2()" class="transformation transformp2" id="transformp24">SS God</button>
-            boost 2.0 ki: 200 <br>
-            <button onclick="superSaiyanGodSuperSaiyanp2()" class="transformation transformp2" id="transformp25">SS God SS</button>
-            boost 2.5 ki: 250  <br>
-            </div>
-        </div>
-    </div>
 </div>
+
+<!--Begin Mode Select Screen (Main Menu)-->
+
+<div id="mainMenuScreen">
+
+</div>
+
+<!--Character Select Screen-->
+
+<div id="charSelectScreen">
+
+</div>
+
+
+<!--Begin div encompassing Battle Screen-->
+
+
+<div id="battleScreen">
+
+<!-- Begin div for battle area-->
+    <div id="topRow">
+    </div>
+
+<!-- Begin div for battle responsive feed -->
 <div id="bottomRow">
     <h1> Nemesis: Engage </h1>
 </div>
+
+
+</div>
+<!--    Close div encompassing Battle Screen-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

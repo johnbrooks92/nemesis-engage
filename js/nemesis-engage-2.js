@@ -424,7 +424,7 @@ function infinite(){
         if (sonHP < 0){
             sonHP = 0
         }
-        bottomRow.innerHTML = "p2 knocked thema round with Infinite Break! The attack did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
+        bottomRow.innerHTML = "p2 knocked them around with Infinite Break! The attack did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
         var p1HPBarWidth = (sonHP/1200)*300;
         p1HP.style.width = p1HPBarWidth + "px";
     } else {
