@@ -8,7 +8,7 @@ body{
     border: 1px solid;
     border-color: #050000;
     justify-content: space-between;
-    background-image: url("../img/wasteland.png");
+    /*background-image: url("../img/wasteland.png");*/
     background-size: cover;
     align-items: center;
     visibility: hidden;
