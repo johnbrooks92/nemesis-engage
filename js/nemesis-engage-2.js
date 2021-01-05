@@ -4,6 +4,7 @@
 const url = "https://fascinated-rigorous-breath.glitch.me/fighters";
 console.log(url);
 let catalog = [];
+let responseObject = {fighters:[]};
 let name = $("#name");
 let moves = $("#moves");
 let ultimate = $("#ultimate");
@@ -18,14 +19,14 @@ let atkaura = $("#atkaura");
 let defaura = $("#defaura");
 
 
-
 //Functionality for Initial Fetch
 fetch(url)
     .then(response => response.json())
     .then(response => {
         $("#topRow").fadeIn(5000).css("display", "flex");
-        catalog = response;
-        displayFighters(catalog);
+        responseObject = response;
+        displayFighters(responseObject.fighters);
+        console.log(response)
         canRemoveFighter();
         canEditFighter();
     })
