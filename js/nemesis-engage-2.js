@@ -38,7 +38,6 @@ function callback() {
         .then(response => response.json())
         .then(response => {
             $("#topRow").css("display", "flex");
-            $("#loading").fadeOut(300);
             catalog = response;
             console.log(catalog);
             canRemoveFighter();
