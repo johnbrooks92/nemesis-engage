@@ -82,36 +82,36 @@ h1{
     background-color: #60dfcd;
     background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);
 }
-#p1Stats{
+#GokuStats{
     color: #2a2a72;
     background-color: #ee4a02;
     background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
     border: 3px solid #2a2a72;
     margin-left: 100px;
 }
-#p1Stats h1{
+#GokuStats h1{
     color: #2a2a72;
 }
-#p2Stats{
+#VegetaStats{
     color: #ff4e00;
     background-color: #29539b;
     background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
     border: 3px solid #ff4e00;
     margin-right: 100px;
 }
-#p2Stats h1{
+#VegetaStats h1{
     color: #ff4e00;
 }
 h3{
     font-family: 'Goldman', cursive;
 }
-#p1Stats h3{
+#GokuStats h3{
     color: #2a2a72;
 }
-#p2Stats h3{
+#VegetaStats h3{
     color: #ff4e00;
 }
-.movesp2{
+.movesVegeta{
     color: #2a2a72;
     background-color: #ee4a02;
     background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
@@ -131,7 +131,7 @@ h3{
     background-color: #00b712;
     background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
 }
-.movesp1 {
+.movesGoku {
     color: #ff4e00;
     background-color: #29539b;
     background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
@@ -142,32 +142,32 @@ h3{
 .transformation, .moves{
     margin: 1.8px;
 }
-#transformp21, #transformp22, #transformp23 {
+#transformVegeta1, #transformVegeta2, #transformVegeta3 {
     color: #ffdd00;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
-#transformp24{
+#transformVegeta4{
     color: #ff006f;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
-#transformp25{
+#transformVegeta5{
     color: #05daf5;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
-#transformp11, #transformp12, #transformp13 {
+#transformGoku1, #transformGoku2, #transformGoku3 {
     color: #ffdd00;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
-#transformp14{
+#transformGoku4{
     color: #ff006f;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
-#transformp15 {
+#transformGoku5 {
     color: #15919f;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
@@ -178,25 +178,25 @@ h3{
 /*    color: #60dfcd;*/
 /*    background-image: url("../img/hover-lightning.gif");*/
 /*}*/
-#transformp11:hover, #transformp21:hover, #transformp12:hover, #transformp22:hover, #transformp13:hover, #transformp23:hover {
+#transformGoku1:hover, #transformVegeta1:hover, #transformGoku2:hover, #transformVegeta2:hover, #transformGoku3:hover, #transformVegeta3:hover {
     border: 1px solid sandybrown;
     border-radius: 20px;
     color: #60dfcd;
     background-image: url("../img/hover-lightning-2.gif");
 }
-#transformp14:hover, #transformp24:hover {
+#transformGoku4:hover, #transformVegeta4:hover {
     border: 1px solid silver;
     border-radius: 20px;
     color: #60dfcd;
     background-image: url("../img/hover-fire.gif");
 }
-#transformp15:hover, #transformp25:hover {
+#transformGoku5:hover, #transformVegeta5:hover {
     border: 1px solid gold;
     border-radius: 20px;
     color: #60dfcd;
     background-image: url("../img/hover-lightning.gif");
 }
-#ultimateMovesp11:hover, #ultimateMovesp21:hover {
+#ultimateMovesGoku1:hover, #ultimateMovesVegeta1:hover {
     border: 1px solid gold;
     border-radius: 20px;
     color: #60dfcd;

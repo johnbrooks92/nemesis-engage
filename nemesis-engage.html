@@ -17,15 +17,15 @@
 <h1 id="enterNotification">Press Enter to Begin</h1>
 <div id="container-fluid">
     <div id="topRow">
-        <div id="p1Stats" class="stats">
+        <div id="GokuStats" class="stats">
             <h1>Goku</h1>
             <span class="healthLabel">HP</span><br>
             <div class="hpBorder">
-                <div id="p1HP" class="hpBar"></div>
+                <div id="GokuHP" class="hpBar"></div>
             </div>
             <span class="kiLabel">KI</span><br>
             <div class="kiBorder">
-                <div id="p1Ki" class="kiBar"></div>
+                <div id="GokuKi" class="kiBar"></div>
             </div>
             <br>
             <div>
@@ -33,22 +33,22 @@
             </div>
 
             <!--Kamehameha Button-->
-            <button onclick="kamehameha()" class="moves movesp1" id="movesp11">Kamehameha Wave</button>
+            <button onclick="kamehameha()" class="moves movesGoku" id="movesGoku1">Kamehameha Wave</button>
             ki: 155<br>
 
 
 
             <!--Kiai Button-->
-            <button onclick="kiai()" class="moves movesp1" id="movesp12">Kiai Blowback</button>
+            <button onclick="kiai()" class="moves movesGoku" id="movesGoku2">Kiai Blowback</button>
             ki: 65 <br>
 
 
             <!--Kaioken Triple Attack Button-->
-            <button onclick="kaioken()" class="moves movesp1" id="movesp13">Kaioken Triple Attack</button>
+            <button onclick="kaioken()" class="moves movesGoku" id="movesGoku3">Kaioken Triple Attack</button>
             ki: 130<br>
 
             <!--Fists of Flurry Button-->
-            <button onclick="flurry()" class="moves movesp1" id="movesp14">Fists of Flurry</button>
+            <button onclick="flurry()" class="moves movesGoku" id="movesGoku4">Fists of Flurry</button>
             ki: 30<br>
             <br>
             <div>
@@ -56,7 +56,7 @@
             </div>
 
             <!--Spirit Bomb Button-->
-            <button onclick="spirit()" class="ultimateMoves ultimateMovesp1" id="ultimateMovesp11">Spirit Bomb</button>
+            <button onclick="spirit()" class="ultimateMoves ultimateMovesGoku" id="ultimateMovesGoku1">Spirit Bomb</button>
             ki: 290<br>
             <br>
 
@@ -64,68 +64,68 @@
             <div>
                 <h3 class="vitalsLabel">Ki and Health</h3>
             </div>
-            <button onclick="kip1()" class="moves kiMoves" id="kiMoves1">Charge Ki!</button>
+            <button onclick="kiGoku()" class="moves kiMoves" id="kiMoves1">Charge Ki!</button>
             Gather your energy!<br>
-            <button onclick="recoverp1()" class="moves healthMoves" id="healthMoves1">Recover Health</button>
+            <button onclick="recoverGoku()" class="moves healthMoves" id="healthMoves1">Recover Health</button>
             Senzu Bean! (max. 1)<br>
             <div class="transformationButton">
                 <h3 class="standardsLabel">Transformations</h3>
-            <button onclick="superSaiyanp1()" class="transformation transformp1" id="transformp11">Super Saiyan</button>
+            <button onclick="superSaiyanGoku()" class="transformation transformGoku" id="transformGoku1">Super Saiyan</button>
             boost: 1.25 ki: 125<br>
-            <button onclick="superSaiyan2p1()" class="transformation transformp1" id="transformp12">Super Saiyan 2</button>
+            <button onclick="superSaiyan2Goku()" class="transformation transformGoku" id="transformGoku2">Super Saiyan 2</button>
             boost: 1.5 ki: 150<br>
-            <button onclick="superSaiyan3p1()" class="transformation transformp1" id="transformp13">Super Saiyan 3</button>
+            <button onclick="superSaiyan3Goku()" class="transformation transformGoku" id="transformGoku3">Super Saiyan 3</button>
             boost: 1.75 ki: 175 <br>
-            <button onclick="superSaiyanGodp1()" class="transformation transformp1" id="transformp14">SS God</button>
+            <button onclick="superSaiyanGodGoku()" class="transformation transformGoku" id="transformGoku4">SS God</button>
             boost 2.0 ki: 200 <br>
-            <button onclick="superSaiyanGodSuperSaiyanp1()" class="transformation transformp1" id="transformp15">SS God SS</button>
+            <button onclick="superSaiyanGodSuperSaiyanGoku()" class="transformation transformGoku" id="transformGoku5">SS God SS</button>
             boost 2.5 ki: 250  <br>
             </div>
         </div>
 
-        <!--p1 Images/Audio for Transformations-->
+        <!--Goku Images/Audio for Transformations-->
         <!--Base Form-->
-        <div id="sonp1Base" class="fighter saiyan">
-            <img src="img/goku-base.png" alt="p1WhereYouGo" class="character-image-p1">
+        <div id="sonGokuBase" class="fighter saiyan">
+            <img src="img/goku-base.png" alt="GokuWhereYouGo" class="character-image-Goku">
         </div>
 
         <!--SS Form-->
-        <div id="sonp1SS" class="fighter saiyan">
-            <img src="img/goku-ss1.png" alt="p1WhereYouGo" class="character-image-p1">
+        <div id="sonGokuSS" class="fighter saiyan">
+            <img src="img/goku-ss1.png" alt="GokuWhereYouGo" class="character-image-Goku">
         </div>
-        <audio id="ssScreamp1">
+        <audio id="ssScreamGoku">
             <source src="audio/goku-transform-ssj1.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS2 Form-->
-        <div id="sonp1SS2" class="fighter saiyan">
-            <img src="img/goku-ss2.png" alt="p1WhereYouGo" class="character-image-p1">
+        <div id="sonGokuSS2" class="fighter saiyan">
+            <img src="img/goku-ss2.png" alt="GokuWhereYouGo" class="character-image-Goku">
         </div>
-        <audio id="ss2Screamp1">
+        <audio id="ss2ScreamGoku">
             <source src="audio/goku-transform-ssj2.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS3 Form-->
-        <div id="sonp1SS3" class="fighter saiyan">
-            <img src="img/goku-ss3.png" alt="p1WhereYouGo" class="character-image-p1">
+        <div id="sonGokuSS3" class="fighter saiyan">
+            <img src="img/goku-ss3.png" alt="GokuWhereYouGo" class="character-image-Goku">
         </div>
-        <audio id="ss3Screamp1">
+        <audio id="ss3ScreamGoku">
             <source src="audio/goku-transform-ss3.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS God Form-->
-        <div id="sonp1SSG" class="fighter saiyan">
-            <img src="img/goku-ssg.png" alt="p1WhereYouGo" class="character-image-p1">
+        <div id="sonGokuSSG" class="fighter saiyan">
+            <img src="img/goku-ssg.png" alt="GokuWhereYouGo" class="character-image-Goku">
         </div>
-        <audio id="ssGScreamp1">
+        <audio id="ssGScreamGoku">
             <source src="audio/goku-transform-ssg.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS God SS Form-->
-        <div id="sonp1SSGSS" class="fighter saiyan">
-            <img src="img/goku-ssgss.png" alt="p1WhereYouGo" class="character-image-p1">
+        <div id="sonGokuSSGSS" class="fighter saiyan">
+            <img src="img/goku-ssgss.png" alt="GokuWhereYouGo" class="character-image-Goku">
         </div>
-        <audio id="ssGssScreamp1">
+        <audio id="ssGssScreamGoku">
             <source src="audio/goku-transform-ssgss.mp3" type="audio/mpeg">
         </audio>
         <!--Media for Moves-->
@@ -171,7 +171,7 @@
         </div>
 
 
-        <!--p2 Images/Audio for Moves-->
+        <!--Vegeta Images/Audio for Moves-->
 
         <!--Media for Moves-->
 
@@ -218,19 +218,19 @@
 
         <!--Ki/Health Audio-->
 
-        <!--p1-->
-        <audio id="p1KiAudio">
-            <source src="audio/vegeta-powerup-sound.mp3" type="audio/mpeg">
+        <!--Goku-->
+        <audio id="GokuKiAudio">
+            <source src="audio/goku-powerup-sound.mp3" type="audio/mpeg">
         </audio>
-        <audio id="p1HealthAudio">
-            <source src="audio/vegeta-health-recover.mp3" type="audio/mpeg">
+        <audio id="GokuHealthAudio">
+            <source src="audio/goku-health-recover.mp3" type="audio/mpeg">
         </audio>
 
-        <!--p2-->
-        <audio id="p2KiAudio">
+        <!--Vegeta-->
+        <audio id="VegetaKiAudio">
             <source src="audio/vegeta-powerupsound-2.mp3" type="audio/mpeg">
         </audio>
-        <audio id="p2HealthAudio">
+        <audio id="VegetaHealthAudio">
             <source src="audio/vegeta-health-recover.mp3" type="audio/mpeg">
         </audio>
 
@@ -238,50 +238,50 @@
 
 
 
-        <!-- p2 Transformations-->
+        <!-- Vegeta Transformations-->
 
         <!--Base Form-->
-        <div id="princep2Base" class="fighter saiyan">
-            <img src="img/vegeta-base.png" alt="p2WhereYouGo" class="character-image-p2">
+        <div id="princeVegetaBase" class="fighter saiyan">
+            <img src="img/vegeta-base.png" alt="VegetaWhereYouGo" class="character-image-Vegeta">
         </div>
 
         <!--SS Form-->
-        <div id="princep2SS" class="fighter saiyan">
-            <img src="img/vegeta-ss1.png" alt="p2WhereYouGo" class="character-image-p2">
+        <div id="princeVegetaSS" class="fighter saiyan">
+            <img src="img/vegeta-ss1.png" alt="VegetaWhereYouGo" class="character-image-Vegeta">
         </div>
-        <audio id="ssScreamp2">
+        <audio id="ssScreamVegeta">
             <source src="audio/vegeta-transform-ss.mp3" type="audio/mpeg">
         </audio>
 
         <!--Majin Form-->
-        <div id="princep2Majin" class="fighter saiyan">
-            <img src="img/vegeta-majin.png" alt="p2WhereYouGo" class="character-image-p2">
+        <div id="princeVegetaMajin" class="fighter saiyan">
+            <img src="img/vegeta-majin.png" alt="VegetaWhereYouGo" class="character-image-Vegeta">
         </div>
-        <audio id="majinScreamp2">
+        <audio id="majinScreamVegeta">
             <source src="audio/vegeta-transform-majin.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS3 Form-->
-        <div id="princep2SS3" class="fighter saiyan">
-            <img src="img/vegeta-ss3.png" alt="p2WhereYouGo" class="character-image-p2">
+        <div id="princeVegetaSS3" class="fighter saiyan">
+            <img src="img/vegeta-ss3.png" alt="VegetaWhereYouGo" class="character-image-Vegeta">
         </div>
-        <audio id="ss3Screamp2">
+        <audio id="ss3ScreamVegeta">
             <source src="audio/vegeta-transform-ss3.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS God Form-->
-        <div id="princep2SSG" class="fighter saiyan">
-            <img src="img/vegeta-ssg.png" alt="p2WhereYouGo" class="character-image-p2">
+        <div id="princeVegetaSSG" class="fighter saiyan">
+            <img src="img/vegeta-ssg.png" alt="VegetaWhereYouGo" class="character-image-Vegeta">
         </div>
-        <audio id="ssgScreamp2">
+        <audio id="ssgScreamVegeta">
             <source src="audio/vegeta-transform-ssg.mp3" type="audio/mpeg">
         </audio>
 
         <!--SS God SS Form-->
-        <div id="princep2SSGSS" class="fighter saiyan">
-            <img src="img/vegeta-ssgss.png" alt="p2WhereYouGo" class="character-image-p2">
+        <div id="princeVegetaSSGSS" class="fighter saiyan">
+            <img src="img/vegeta-ssgss.png" alt="VegetaWhereYouGo" class="character-image-Vegeta">
         </div>
-        <audio id="ssgssScreamp2">
+        <audio id="ssgssScreamVegeta">
             <source src="audio/vegeta-transform-ssgss.mp3" type="audio/mpeg">
         </audio>
 
@@ -294,56 +294,56 @@
 
 
 
-        <div id="p2Stats" class="stats">
+        <div id="VegetaStats" class="stats">
             <h1>Vegeta</h1>
             <span class="healthLabel">HP</span><br>
             <div class="hpBorder">
-                <div id="p2HP" class="hpBar"></div>
+                <div id="VegetaHP" class="hpBar"></div>
             </div>
             <span class="kiLabel">KI</span><br>
             <div class="kiBorder">
-                <div id="p2Ki" class="kiBar"></div>
+                <div id="VegetaKi" class="kiBar"></div>
             </div>
             <br>
             <div>
                 <h3 class="standardsLabel">Standard Moves</h3>
             </div>
-            <button onclick="galickGun()" class="moves movesp2" id="movesp21">Galick Gun</button>
+            <button onclick="galickGun()" class="moves movesVegeta" id="movesVegeta1">Galick Gun</button>
             ki: 160<br>
-            <button onclick="lucora()" class="moves movesp2" id="movesp22">Lucora Gun</button>
+            <button onclick="lucora()" class="moves movesVegeta" id="movesVegeta2">Lucora Gun</button>
             ki: 75<br>
-            <button onclick="fireworks()" class="moves movesp2" id="movesp23">Dirty Fireworks</button>
+            <button onclick="fireworks()" class="moves movesVegeta" id="movesVegeta3">Dirty Fireworks</button>
             ki: 120 <br>
-            <button onclick="infinite()" class="moves movesp2" id="movesp24">Infinite Break</button>
+            <button onclick="infinite()" class="moves movesVegeta" id="movesVegeta4">Infinite Break</button>
             ki: 30 <br>
             <br>
             <div>
                 <h3 class="ultimatesLabel">Ultimate Moves</h3>
             </div>
-            <button onclick="finalFlash()" class="ultimateMoves ultimateMovesp2" id="ultimateMovesp21">Final
+            <button onclick="finalFlash()" class="ultimateMoves ultimateMovesVegeta" id="ultimateMovesVegeta1">Final
                 Flash
             </button>
             ki: 235 <br>
             <br>
             <div>
                 <h3 class="vitalsLabel">Ki and Health</h3>
-            <button onclick="kip2()" class="moves kiMoves" id="kiMoves2">Charge Ki!</button>
+            <button onclick="kiVegeta()" class="moves kiMoves" id="kiMoves2">Charge Ki!</button>
             Gather your energy!<br>
 
-            <button onclick="recoverp2()" class="moves healthMoves" id="healthMoves2">Recover Health</button>
+            <button onclick="recoverVegeta()" class="moves healthMoves" id="healthMoves2">Recover Health</button>
             Senzu Bean! (max. 1)<br>
             </div>
             <div class="transformationButton">
             <h3 class="standardsLabel">Transformations</h3>
-            <button onclick="superSaiyanp2()" class="transformation transformp2" id="transformp21">Super Saiyan</button>
+            <button onclick="superSaiyanVegeta()" class="transformation transformVegeta" id="transformVegeta1">Super Saiyan</button>
             boost: 1.25 ki: 125<br>
-            <button onclick="majinp2()" class="transformation transformp2" id="transformp22">Majin (SS2)</button>
+            <button onclick="majinVegeta()" class="transformation transformVegeta" id="transformVegeta2">Majin (SS2)</button>
             boost: 1.5 ki: 150<br>
-            <button onclick="superSaiyan3p2()" class="transformation transformp2" id="transformp23">Super Saiyan 3</button>
+            <button onclick="superSaiyan3Vegeta()" class="transformation transformVegeta" id="transformVegeta3">Super Saiyan 3</button>
             boost: 1.75 ki: 175 <br>
-            <button onclick="superSaiyanGodp2()" class="transformation transformp2" id="transformp24">SS God</button>
+            <button onclick="superSaiyanGodVegeta()" class="transformation transformVegeta" id="transformVegeta4">SS God</button>
             boost 2.0 ki: 200 <br>
-            <button onclick="superSaiyanGodSuperSaiyanp2()" class="transformation transformp2" id="transformp25">SS God SS</button>
+            <button onclick="superSaiyanGodSuperSaiyanVegeta()" class="transformation transformVegeta" id="transformVegeta5">SS God SS</button>
             boost 2.5 ki: 250  <br>
             </div>
         </div>

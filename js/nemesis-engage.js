@@ -1,7 +1,7 @@
 
 // Keystroke to start audio background and hide top strip
-var musicCode =[13]
-var inputCode=[]
+var musicCode=[13];
+var inputCode=[];
 
 $('body').keyup(function(event) {
     $(this).scrollTop(0);
@@ -27,17 +27,17 @@ document.getElementById("battleThemeSaiyans").volume = 0.35;
 
 
 //Define all global variables needed pointing to our different divs
-var topRow = document.getElementById('topRow');
+// var topRow = document.getElementById('topRow');
 var bottomRow = document.getElementById('bottomRow');
-var stats = document.getElementsByClassName('stats');
-var p1Stats = document.getElementById('p1Stats');
-var p2Stats = document.getElementById('p2Stats');
-var p1HP = document.getElementById('p1HP');
-var p2HP = document.getElementById('p2HP');
-var p1Ki = document.getElementById('p1Ki');
-var p2Ki = document.getElementById('p2Ki');
-var p1HealthBtn = document.getElementById('healthMoves1');
-var p2HealthBtn = document.getElementById('healthMoves2');
+// var stats = document.getElementsByClassName('stats');
+// var GokuStats = document.getElementById('GokuStats');
+// var VegetaStats = document.getElementById('VegetaStats');
+var GokuHP = document.getElementById('GokuHP');
+var VegetaHP = document.getElementById('VegetaHP');
+var GokuKi = document.getElementById('GokuKi');
+var VegetaKi = document.getElementById('VegetaKi');
+var GokuHealthBtn = document.getElementById('healthMoves1');
+var VegetaHealthBtn = document.getElementById('healthMoves2');
 
 
 //Define Health Variables
@@ -55,126 +55,126 @@ var princeKi = 1200;
 
 $(document).ready(function(){
 
-    //p1 Transformation Effects
-    $('#sonp1SS').hide();
-    $('#sonp1SS2').hide();
-    $('#sonp1SS3').hide();
-    $('#sonp1SSG').hide();
-    $('#sonp1SSGSS').hide();
+    //Goku Transformation Effects
+    $('#sonGokuSS').hide();
+    $('#sonGokuSS2').hide();
+    $('#sonGokuSS3').hide();
+    $('#sonGokuSSG').hide();
+    $('#sonGokuSSGSS').hide();
 
-    $('#transformp11').click(function(){
-        $('#sonp1Base').hide();
-        $('#sonp1SS2').hide();
-        $('#sonp1SS3').hide();
-        $('#sonp1SSG').hide();
-        $('#sonp1SSGSS').hide();
-        $('audio#ssScreamp1')[0].play();
-        $('#sonp1SS').show();
-        bottomRow.innerHTML += "<br>p1 has transformed into the Super Saiyan of legends!"
+    $('#transformGoku1').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS2').hide();
+        $('#sonGokuSS3').hide();
+        $('#sonGokuSSG').hide();
+        $('#sonGokuSSGSS').hide();
+        $('audio#ssScreamGoku')[0].play();
+        $('#sonGokuSS').show();
+        bottomRow.innerHTML += "<br>Goku has transformed into the Super Saiyan of legends!"
     });
-    $('#transformp12').click(function(){
-        $('#sonp1Base').hide();
-        $('#sonp1SS').hide();
-        $('#sonp1SS3').hide();
-        $('#sonp1SSG').hide();
-        $('#sonp1SSGSS').hide();
-        $('audio#ss2Screamp1')[0].play();
-        $('#sonp1SS2').show();
-        bottomRow.innerHTML += "<br>p1 has transformed into an ascended saiyan!"
+    $('#transformGoku2').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
+        $('#sonGokuSS3').hide();
+        $('#sonGokuSSG').hide();
+        $('#sonGokuSSGSS').hide();
+        $('audio#ss2ScreamGoku')[0].play();
+        $('#sonGokuSS2').show();
+        bottomRow.innerHTML += "<br>Goku has transformed into an ascended saiyan!"
     });
-    $('#transformp13').click(function(){
-        $('#sonp1Base').hide();
-        $('#sonp1SS').hide();
-        $('#sonp1SS2').hide();
-        $('#sonp1SSG').hide();
-        $('#sonp1SSGSS').hide();
-        $('audio#ss3Screamp1')[0].play();
-        $('#sonp1SS3').show();
-        bottomRow.innerHTML += "<br>p1 has taken this even further beyond!"
+    $('#transformGoku3').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
+        $('#sonGokuSS2').hide();
+        $('#sonGokuSSG').hide();
+        $('#sonGokuSSGSS').hide();
+        $('audio#ss3ScreamGoku')[0].play();
+        $('#sonGokuSS3').show();
+        bottomRow.innerHTML += "<br>Goku has taken this even further beyond!"
     });
-    $('#transformp14').click(function(){
-        $('#sonp1Base').hide();
-        $('#sonp1SS').hide();
-        $('#sonp1SS2').hide();
-        $('#sonp1SS3').hide();
-        $('#sonp1SSGSS').hide();
-        $('audio#ssGScreamp1')[0].play();
-        $('#sonp1SSG').show();
-        bottomRow.innerHTML += "<br>p1 has achieved the power of Gods!"
+    $('#transformGoku4').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
+        $('#sonGokuSS2').hide();
+        $('#sonGokuSS3').hide();
+        $('#sonGokuSSGSS').hide();
+        $('audio#ssGScreamGoku')[0].play();
+        $('#sonGokuSSG').show();
+        bottomRow.innerHTML += "<br>Goku has achieved the power of Gods!"
     });
-    $('#transformp15').click(function(){
-        $('#sonp1Base').hide();
-        $('#sonp1SS').hide();
-        $('#sonp1SS2').hide();
-        $('#sonp1SS3').hide();
-        $('#sonp1SSG').hide();
-        $('audio#ssGssScreamp1')[0].play();
-        $('#sonp1SSGSS').show();
-        bottomRow.innerHTML += "<br>p1 has become a Super Saiyan amongst Gods!!"
+    $('#transformGoku5').click(function(){
+        $('#sonGokuBase').hide();
+        $('#sonGokuSS').hide();
+        $('#sonGokuSS2').hide();
+        $('#sonGokuSS3').hide();
+        $('#sonGokuSSG').hide();
+        $('audio#ssGssScreamGoku')[0].play();
+        $('#sonGokuSSGSS').show();
+        bottomRow.innerHTML += "<br>Goku has become a Super Saiyan amongst Gods!!"
     });
 
 
-//p2 Transformation Effects
-    $('#princep2SS').hide();
-    $('#princep2Majin').hide();
-    $('#princep2SS3').hide();
-    $('#princep2SSG').hide();
-    $('#princep2SSGSS').hide();
+//Vegeta Transformation Effects
+    $('#princeVegetaSS').hide();
+    $('#princeVegetaMajin').hide();
+    $('#princeVegetaSS3').hide();
+    $('#princeVegetaSSG').hide();
+    $('#princeVegetaSSGSS').hide();
 
-    $('#transformp21').click(function(){
-        $('#princep2Base').hide();
-        $('#princep2Majin').hide();
-        $('#princep2SS3').hide();
-        $('#princep2SSG').hide();
-        $('#princep2SSGSS').hide();
-        $('audio#ssScreamp2')[0].play();
-        $('#princep2SS').show();
-        bottomRow.innerHTML += "<br>p2 has pushed his limits to become a Super Saiyan!"
+    $('#transformVegeta1').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSG').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#ssScreamVegeta')[0].play();
+        $('#princeVegetaSS').show();
+        bottomRow.innerHTML += "<br>Vegeta has pushed his limits to become a Super Saiyan!"
     });
-    $('#transformp22').click(function(){
-        $('#princep2Base').hide();
-        $('#princep2SS').hide();
-        $('#princep2SS3').hide();
-        $('#princep2SSG').hide();
-        $('#princep2SSGSS').hide();
-        $('audio#majinScreamp2')[0].play();
-        $('#princep2Majin').show();
-        bottomRow.innerHTML += "<br>p2 has given into Babidi's influence!"
+    $('#transformVegeta2').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSG').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#majinScreamVegeta')[0].play();
+        $('#princeVegetaMajin').show();
+        bottomRow.innerHTML += "<br>Vegeta has given into Babidi's influence!"
     });
-    $('#transformp23').click(function(){
-        $('#princep2Base').hide();
-        $('#princep2SS').hide();
-        $('#princep2Majin').hide();
-        $('#princep2SSG').hide();
-        $('#princep2SSGSS').hide();
-        $('audio#ss3Screamp2')[0].play();
-        $('#princep2SS3').show();
-        bottomRow.innerHTML += "<br>p2 takes things further beyond!"
+    $('#transformVegeta3').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSSG').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#ss3ScreamVegeta')[0].play();
+        $('#princeVegetaSS3').show();
+        bottomRow.innerHTML += "<br>Vegeta takes things further beyond!"
     });
-    $('#transformp24').click(function(){
-        $('#princep2Base').hide();
-        $('#princep2SS').hide();
-        $('#princep2Majin').hide();
-        $('#princep2SS3').hide();
-        $('#princep2SSGSS').hide();
-        $('audio#ssgScreamp2')[0].play();
-        $('#princep2SSG').show();
-        bottomRow.innerHTML += "<br>p2 has worked his way to a peer of Gods!"
+    $('#transformVegeta4').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSGSS').hide();
+        $('audio#ssgScreamVegeta')[0].play();
+        $('#princeVegetaSSG').show();
+        bottomRow.innerHTML += "<br>Vegeta has worked his way to a peer of Gods!"
     });
-    $('#transformp25').click(function(){
-        $('#princep2Base').hide();
-        $('#princep2SS').hide();
-        $('#princep2Majin').hide();
-        $('#princep2SS3').hide();
-        $('#princep2SSG').hide();
-        $('audio#ssgssScreamp2')[0].play();
-        $('#princep2SSGSS').show();
-        bottomRow.innerHTML += "<br>p2 has ascended past his God form!"
+    $('#transformVegeta5').click(function(){
+        $('#princeVegetaBase').hide();
+        $('#princeVegetaSS').hide();
+        $('#princeVegetaMajin').hide();
+        $('#princeVegetaSS3').hide();
+        $('#princeVegetaSSG').hide();
+        $('audio#ssgssScreamVegeta')[0].play();
+        $('#princeVegetaSSGSS').show();
+        bottomRow.innerHTML += "<br>Vegeta has ascended past his God form!"
     });
 });
 
 
-// Functionality for p1 Moves when clicked
+// Functionality for Goku Moves when clicked
 function kamehameha(){
     var hitChance = Math.round(Math.random()*10);
     var kameGif = document.getElementById("kameVideo");
@@ -190,18 +190,18 @@ function kamehameha(){
         if (princeHP < 0){
             princeHP = 0
         }
-        bottomRow.innerHTML = "p1 landed the Kamehameha! The wave did " + damage + " HP in damage. p2 now has " + princeHP + " HP remaining.";
-        var p2HPBarWidth = (princeHP/1200)*300;
-        p2HP.style.width = p2HPBarWidth + "px";
+        bottomRow.innerHTML = "Goku landed the Kamehameha! The wave did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var VegetaHPBarWidth = (princeHP/1200)*300;
+        VegetaHP.style.width = VegetaHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (princeHP === 0){
-        bottomRow.innerHTML += "<br>p1 has defeated p2 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
     }
     sonKi -= 155;
-    var p1KiBarWidth = (sonKi/1200)*300;
-    p1Ki.style.width = p1KiBarWidth + "px";
+    var GokuKiBarWidth = (sonKi/1200)*300;
+    GokuKi.style.width = GokuKiBarWidth + "px";
 }
 
 function kiai(){
@@ -219,18 +219,18 @@ function kiai(){
         if (princeHP < 0){
             princeHP = 0
         }
-        bottomRow.innerHTML = "p1 landed the Kiai Blowback! The blast did " + damage + " HP in damage. p2 now has " + princeHP + " HP remaining.";
-        var p2HPBarWidth = (princeHP/1200)*300;
-        p2HP.style.width = p2HPBarWidth + "px";
+        bottomRow.innerHTML = "Goku landed the Kiai Blowback! The blast did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var VegetaHPBarWidth = (princeHP/1200)*300;
+        VegetaHP.style.width = VegetaHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (princeHP === 0){
-        bottomRow.innerHTML += "<br>p1 has defeated p2 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
     }
     sonKi -= 65;
-    var p1KiBarWidth = (sonKi/1200)*300;
-    p1Ki.style.width = p1KiBarWidth + "px";
+    var GokuKiBarWidth = (sonKi/1200)*300;
+    GokuKi.style.width = GokuKiBarWidth + "px";
 }
 
 function kaioken(){
@@ -248,18 +248,18 @@ function kaioken(){
         if (princeHP < 0){
             princeHP = 0
         }
-        bottomRow.innerHTML = "p1 landed the Kaioken Triple Attack! The attack did " + damage + " HP in damage. p2 now has " + princeHP + " HP remaining.";
-        var p2HPBarWidth = (princeHP/1200)*300;
-        p2HP.style.width = p2HPBarWidth + "px";
+        bottomRow.innerHTML = "Goku landed the Kaioken Triple Attack! The attack did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var VegetaHPBarWidth = (princeHP/1200)*300;
+        VegetaHP.style.width = VegetaHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (princeHP === 0){
-        bottomRow.innerHTML += "<br>p1 has defeated p2 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
     }
     sonKi -= 130;
-    var p1KiBarWidth = (sonKi/1200)*300;
-    p1Ki.style.width = p1KiBarWidth + "px";
+    var GokuKiBarWidth = (sonKi/1200)*300;
+    GokuKi.style.width = GokuKiBarWidth + "px";
 }
 
 
@@ -278,18 +278,18 @@ function flurry(){
         if (princeHP < 0){
             princeHP = 0
         }
-        bottomRow.innerHTML = "p1 landed the Fist of Flurry! The attack did " + damage + " HP in damage. p2 now has " + princeHP + " HP remaining.";
-        var p2HPBarWidth = (princeHP/1200)*300;
-        p2HP.style.width = p2HPBarWidth + "px";
+        bottomRow.innerHTML = "Goku landed the Fist of Flurry! The attack did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var VegetaHPBarWidth = (princeHP/1200)*300;
+        VegetaHP.style.width = VegetaHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (princeHP === 0){
-        bottomRow.innerHTML += "<br>p1 has defeated p2 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
     }
     sonKi -= 30;
-    var p1KiBarWidth = (sonKi/1200)*300;
-    p1Ki.style.width = p1KiBarWidth + "px";
+    var GokuKiBarWidth = (sonKi/1200)*300;
+    GokuKi.style.width = GokuKiBarWidth + "px";
 }
 
 function spirit(){
@@ -307,20 +307,20 @@ function spirit(){
         if (princeHP < 0){
             princeHP = 0
         }
-        bottomRow.innerHTML = "p1 hit with his ultimate move, Spirit Bomb! The blast did " + damage + " HP in damage. p2 now has " + princeHP + " HP remaining.";
-        var p2HPBarWidth = (princeHP/1200)*300;
-        p2HP.style.width = p2HPBarWidth + "px";
+        bottomRow.innerHTML = "Goku hit with his ultimate move, Spirit Bomb! The blast did " + damage + " HP in damage. Vegeta now has " + princeHP + " HP remaining.";
+        var VegetaHPBarWidth = (princeHP/1200)*300;
+        VegetaHP.style.width = VegetaHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (princeHP === 0){
-        bottomRow.innerHTML += "<br>p1 has defeated p2 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Goku has defeated Vegeta in the duel of the rivals!"
     }
     sonKi -= 290;
-    var p1KiBarWidth = (sonKi/1200)*300;
-    p1Ki.style.width = p1KiBarWidth + "px";
+    var GokuKiBarWidth = (sonKi/1200)*300;
+    GokuKi.style.width = GokuKiBarWidth + "px";
 }
-//Function for p2 Moves
+//Function for Vegeta Moves
 
 function galickGun(){
     var hitChance = Math.round(Math.random()*10);
@@ -337,18 +337,18 @@ function galickGun(){
         if (sonHP < 0){
             sonHP = 0
         }
-        bottomRow.innerHTML = "p2 landed the Galick Gun! The wave did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
-        var p1HPBarWidth = (sonHP/1200)*300;
-        p1HP.style.width = p1HPBarWidth + "px";
+        bottomRow.innerHTML = "Vegeta landed the Galick Gun! The wave did " + damage + " HP in damage. Goku now has " + sonHP + " HP remaining.";
+        var GokuHPBarWidth = (sonHP/1200)*300;
+        GokuHP.style.width = GokuHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (sonHP === 0){
-        bottomRow.innerHTML += "<br>p2 had defeated p1 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Vegeta had defeated Goku in the duel of the rivals!"
     }
     princeKi -= 160;
-    var p2KiBarWidth = (princeKi/1200)*300;
-    p2Ki.style.width = p2KiBarWidth + "px";
+    var VegetaKiBarWidth = (princeKi/1200)*300;
+    VegetaKi.style.width = VegetaKiBarWidth + "px";
 }
 
 function lucora(){
@@ -366,18 +366,18 @@ function lucora(){
         if (sonHP < 0){
             sonHP = 0
         }
-        bottomRow.innerHTML = "p2 landed the Lucora Gun! The move did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
-        var p1HPBarWidth = (sonHP/1200)*300;
-        p1HP.style.width = p1HPBarWidth + "px";
+        bottomRow.innerHTML = "Vegeta landed the Lucora Gun! The move did " + damage + " HP in damage. Goku now has " + sonHP + " HP remaining.";
+        var GokuHPBarWidth = (sonHP/1200)*300;
+        GokuHP.style.width = GokuHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (sonHP === 0){
-        bottomRow.innerHTML += "<br>p2 had defeated p1 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Vegeta had defeated Goku in the duel of the rivals!"
     }
     princeKi -= 75;
-    var p2KiBarWidth = (princeKi/1200)*300;
-    p2Ki.style.width = p2KiBarWidth + "px";
+    var VegetaKiBarWidth = (princeKi/1200)*300;
+    VegetaKi.style.width = VegetaKiBarWidth + "px";
 }
 
 function fireworks(){
@@ -395,18 +395,18 @@ function fireworks(){
         if (sonHP < 0){
             sonHP = 0
         }
-        bottomRow.innerHTML = "p2 hit that target with Dirty Fireworks! The attack did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
-        var p1HPBarWidth = (sonHP/1200)*300;
-        p1HP.style.width = p1HPBarWidth + "px";
+        bottomRow.innerHTML = "Vegeta hit that target with Dirty Fireworks! The attack did " + damage + " HP in damage. Goku now has " + sonHP + " HP remaining.";
+        var GokuHPBarWidth = (sonHP/1200)*300;
+        GokuHP.style.width = GokuHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (sonHP === 0){
-        bottomRow.innerHTML += "<br>p2 had defeated p1 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Vegeta had defeated Goku in the duel of the rivals!"
     }
     princeKi -= 120;
-    var p2KiBarWidth = (princeKi/1200)*300;
-    p2Ki.style.width = p2KiBarWidth + "px";
+    var VegetaKiBarWidth = (princeKi/1200)*300;
+    VegetaKi.style.width = VegetaKiBarWidth + "px";
 }
 
 function infinite(){
@@ -424,18 +424,18 @@ function infinite(){
         if (sonHP < 0){
             sonHP = 0
         }
-        bottomRow.innerHTML = "p2 knocked thema round with Infinite Break! The attack did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
-        var p1HPBarWidth = (sonHP/1200)*300;
-        p1HP.style.width = p1HPBarWidth + "px";
+        bottomRow.innerHTML = "Vegeta knocked thema round with Infinite Break! The attack did " + damage + " HP in damage. Goku now has " + sonHP + " HP remaining.";
+        var GokuHPBarWidth = (sonHP/1200)*300;
+        GokuHP.style.width = GokuHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (sonHP === 0){
-        bottomRow.innerHTML += "<br>p2 had defeated p1 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Vegeta had defeated Goku in the duel of the rivals!"
     }
     princeKi -= 30;
-    var p2KiBarWidth = (princeKi/1200)*300;
-    p2Ki.style.width = p2KiBarWidth + "px";
+    var VegetaKiBarWidth = (princeKi/1200)*300;
+    VegetaKi.style.width = VegetaKiBarWidth + "px";
 }
 
 function finalFlash(){
@@ -453,63 +453,63 @@ function finalFlash(){
         if (sonHP < 0){
             sonHP = 0
         }
-        bottomRow.innerHTML = "p2 used his ultimate move, Final Flash! The blast did " + damage + " HP in damage. p1 now has " + sonHP + " HP remaining.";
-        var p1HPBarWidth = (sonHP/1200)*300;
-        p1HP.style.width = p1HPBarWidth + "px";
+        bottomRow.innerHTML = "Vegeta used his ultimate move, Final Flash! The blast did " + damage + " HP in damage. Goku now has " + sonHP + " HP remaining.";
+        var GokuHPBarWidth = (sonHP/1200)*300;
+        GokuHP.style.width = GokuHPBarWidth + "px";
     } else {
         bottomRow.innerHTML = "You missed!";
     }
     if (sonHP === 0){
-        bottomRow.innerHTML += "<br>p2 had defeated p1 in the duel of the rivals!"
+        bottomRow.innerHTML += "<br>Vegeta had defeated Goku in the duel of the rivals!"
     }
     princeKi -= 235;
-    var p2KiBarWidth = (princeKi/1200)*300;
-    p2Ki.style.width = p2KiBarWidth + "px";
+    var VegetaKiBarWidth = (princeKi/1200)*300;
+    VegetaKi.style.width = VegetaKiBarWidth + "px";
 }
 //Functionality for Ki and Health
-function kip1() {
-    document.getElementById("p1KiAudio").play();
+function kiGoku() {
+    document.getElementById("GokuKiAudio").play();
     if(sonKi<=800) {
         sonKi += 400;
     } else if(sonKi>800) {
         sonKi = 1200
     }
-    var p1KiBar = (sonKi/1200)*300;
-    p1Ki.style.width = p1KiBar + "px";
-    bottomRow.innerHTML += "<br>p1 recovered his ki! p1 now has " + sonKi + " Ki remaining.";
+    var GokuKiBar = (sonKi/1200)*300;
+    GokuKi.style.width = GokuKiBar + "px";
+    bottomRow.innerHTML += "<br>Goku recovered his ki! Goku now has " + sonKi + " Ki remaining.";
 }
 
-function recoverp1() {
-    document.getElementById("p1HealthAudio").play();
+function recoverGoku() {
+    document.getElementById("GokuHealthAudio").play();
    sonHP = 1200
-    var p1HPBar = (sonHP/1200)*300;
-    p1HP.style.width = p1HPBar + "px";
-    bottomRow.innerHTML += "<br>p1 recovered his health! p1 now has " + sonHP + " HP remaining.";
-    p1HealthBtn.disabled = true;
+    var GokuHPBar = (sonHP/1200)*300;
+    GokuHP.style.width = GokuHPBar + "px";
+    bottomRow.innerHTML += "<br>Goku recovered his health! Goku now has " + sonHP + " HP remaining.";
+    GokuHealthBtn.disabled = true;
 }
 
-function kip2() {
-    document.getElementById("p2KiAudio").play();
+function kiVegeta() {
+    document.getElementById("VegetaKiAudio").play();
     if(princeKi<=800) {
     princeKi += 400;
 } else if(princeKi>800) {
         princeKi = 1200
     }
-    var p2KiBar = (princeKi/1200)*300;
-    p2Ki.style.width = p2KiBar + "px";
-    bottomRow.innerHTML += "<br>p2 recovered his ki! p2 now has " + princeKi + " Ki remaining.";
+    var VegetaKiBar = (princeKi/1200)*300;
+    VegetaKi.style.width = VegetaKiBar + "px";
+    bottomRow.innerHTML += "<br>Vegeta recovered his ki! Vegeta now has " + princeKi + " Ki remaining.";
 }
 
-function recoverp2() {
-    document.getElementById("p2HealthAudio").play();
+function recoverVegeta() {
+    document.getElementById("VegetaHealthAudio").play();
     if(princeHP<=300) {
         princeHP += 900;
     } else if(princeHP>300) {
         princeHP = 1200
     }
-    var p2HPBar = (princeHP/1200)*300;
-    p2HP.style.width = p2HPBar + "px";
-    bottomRow.innerHTML += "<br>p2 recovered his health! p2 now has " + princeHP + " HP remaining.";
-    p2HealthBtn.disabled = true;
+    var VegetaHPBar = (princeHP/1200)*300;
+    VegetaHP.style.width = VegetaHPBar + "px";
+    bottomRow.innerHTML += "<br>Vegeta recovered his health! Vegeta now has " + princeHP + " HP remaining.";
+    VegetaHealthBtn.disabled = true;
 }
 
