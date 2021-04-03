@@ -1,6 +1,7 @@
 body{
     background-color: black;
     cursor: url('../img/ani1244.cur'), auto;
+    line-height: 1;
 }
 #topRow{
     display: flex;
@@ -14,13 +15,13 @@ body{
     visibility: hidden;
 }
 .fighter{
-    margin: 15px 30px;
-    height: 500px;
+    margin: 1rem 2rem;
+    height: 25rem;
     align-self: baseline;
 }
 .fighter img{
-    height: 500px;
-    width: 271px;
+    height: 25rem;
+    width: 15rem;
     background-color: transparent;
 }
 #bottomRow{
@@ -34,19 +35,19 @@ h1{
     text-align: center;
 }
 .stats{
-    width: 315px;
+    width: 20rem;
     border: 1px solid red;
-    height: 800px;
+    height: 40rem;
     margin-top: 1px;
     color: white;
     text-align: center;
 }
 .stats button {
-    border: 3px solid;
+    border: 1px solid;
     border-radius: 20px;
 }
 .stats button:hover {
-    border: 3px solid gold;
+    border: 1px solid gold;
     border-radius: 20px;
     color: #60dfcd;
     background-image: url("../img/hover-spark.gif");
@@ -57,13 +58,13 @@ h1{
     color: #00b712;
 }
 .hpBorder{
-    width: 300px;
-    height: 20px;
+    width: 19rem;
+    height: .75rem;
     border: 3px solid black;
 }
 .hpBar{
-    width: 300px;
-    height: 20px;
+    width: 19rem;
+    height: .75rem;
     background-color: #00b712;
     background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
 }
@@ -72,13 +73,13 @@ h1{
     color: #60dfcd;
 }
 .kiBorder{
-    width: 300px;
-    height: 20px;
+    width: 19rem;
+    height: .75rem;
     border: 3px solid black;
 }
 .kiBar{
-    width: 300px;
-    height: 20px;
+    width: 19rem;
+    height: .75rem;
     background-color: #60dfcd;
     background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);
 }
@@ -87,7 +88,7 @@ h1{
     background-color: #ee4a02;
     background-image: linear-gradient(315deg, #db4502 0%, #ec9f05 74%);
     border: 3px solid #2a2a72;
-    margin-left: 100px;
+    margin-left: 1rem;
 }
 #GokuStats h1{
     color: #2a2a72;
@@ -97,7 +98,7 @@ h1{
     background-color: #29539b;
     background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
     border: 3px solid #ff4e00;
-    margin-right: 100px;
+    margin-right: 1rem;
 }
 #VegetaStats h1{
     color: #ff4e00;
@@ -180,25 +181,25 @@ h3{
 /*}*/
 #transformGoku1:hover, #transformVegeta1:hover, #transformGoku2:hover, #transformVegeta2:hover, #transformGoku3:hover, #transformVegeta3:hover {
     border: 1px solid sandybrown;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     color: #60dfcd;
     background-image: url("../img/hover-lightning-2.gif");
 }
 #transformGoku4:hover, #transformVegeta4:hover {
     border: 1px solid silver;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     color: #60dfcd;
     background-image: url("../img/hover-fire.gif");
 }
 #transformGoku5:hover, #transformVegeta5:hover {
     border: 1px solid gold;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     color: #60dfcd;
     background-image: url("../img/hover-lightning.gif");
 }
 #ultimateMovesGoku1:hover, #ultimateMovesVegeta1:hover {
     border: 1px solid gold;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     color: #60dfcd;
     background-image: url("../img/hover-ultimate.gif");
 }
@@ -213,4 +214,12 @@ h3{
 }
 .show {
     display: block !important;
+}
+#movesMedia{
+    margin-top: 25rem;
+}
+#container-fluid{
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
 }

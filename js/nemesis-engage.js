@@ -38,6 +38,7 @@ var GokuKi = document.getElementById('GokuKi');
 var VegetaKi = document.getElementById('VegetaKi');
 var GokuHealthBtn = document.getElementById('healthMoves1');
 var VegetaHealthBtn = document.getElementById('healthMoves2');
+var BtnId = document.getElementsByClassName('moves');
 
 
 //Define Health Variables
